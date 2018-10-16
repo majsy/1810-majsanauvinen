@@ -1,0 +1,67 @@
+@import './variables';
+@import './mixins';
+
+body {
+  font-size: 62.5%;
+}
+
+.display1,
+.display2,
+.display3 {
+  font-family: 'Karla', sans-serif;
+}
+
+.display1,
+.display2 {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 1.1;
+  letter-spacing: -0.8px;
+}
+
+.display2 {
+  font-size: 5.2rem;
+  color: $black;
+}
+
+.display3 {
+  font-size: 1.6rem;
+}
+
+@include breakpoint(tablet) {
+  .display1 {
+    font-size: 3.5rem;
+  }
+
+  .display2 {
+    font-size: 4.4rem;
+  }
+
+  .display3 {
+    font-size: 1.4rem;
+  }
+}
+
+@include breakpoint(mobile) {
+  .display1 {
+    font-size: 2.6rem;
+  }
+
+  .display2 {
+    font-size: 3.4rem;
+  }
+
+  .display3 {
+    font-size: 1.2rem;
+  }
+}
+
+@include breakpoint(mobile-s) {
+  .display1 {
+    
+  }
+
+  .display2 {
+    font-size: 3rem;
+  }
+}

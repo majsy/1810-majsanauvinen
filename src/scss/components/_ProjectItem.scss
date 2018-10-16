@@ -1,0 +1,7 @@
+@import '../base/mixins';
+
+.ProjectItem {
+  background-color: $blue-lighter;
+  margin: 50px 0;
+  display: block;
+}

@@ -1,0 +1,7 @@
+@import '../base/mixins';
+
+.ProjectSection {
+  @include size(100%);
+  background-color: $white;
+  padding: $global-gutter;
+}

@@ -1,0 +1,30 @@
+@import './variables';
+
+// Size
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+// Breakpoints 
+@mixin breakpoint($class) {
+  @if $class == mobile-s {
+    @media (max-width: $bp-mobile-s) { @content; }
+  }
+
+  @else if $class == mobile {
+    @media (max-width: $bp-mobile) { @content; }
+  }
+
+  @else if $class == tablet {
+    @media (max-width: $bp-tablet) { @content; }
+  }
+
+  @else if $class == desktop {
+    @media (min-width: $bp-desktop) { @content; }
+  }
+
+  @else {
+    @warn "Breakpoint mixin supports: mobile-s, mobile, tablet, desktop";
+  }
+}
