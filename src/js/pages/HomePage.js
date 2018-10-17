@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import HeroSection from '../components/HeroSection';
-import ProjectSection from '../components/ProjectSection';
+import HeroSection from '../components/home/HeroSection';
+import ProjectSection from '../components/home/ProjectSection';
  
 class HomePage extends Component {
   render() {
+    console.log(this.props.data)
+
     return (
       <div>
-        <h2>Home page</h2>
-        <HeroSection />
+        <HeroSection data={this.props.data} />
         <ProjectSection />
       </div>
     );

@@ -7,24 +7,37 @@ import Footer from './Footer';
 import HomePage from '../pages/HomePage';
 import ProjectPage from '../pages/ProjectPage';
 import AboutPage from '../pages/AboutPage';
+import data from "../../data/app.json";
 
 
-class App extends Component {
+export default class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      appData: data,
+      dataIsLoaded: false
+    }
+  }
+
   render() {
     return (
       <HashRouter>
         <div className="App">
           <Header />
+
           <div className="content">
-            <Route exact path="/" component={HomePage}/>
-            <Route path="/work" component={ProjectPage}/>
-            <Route path="/about" component={AboutPage}/>
+            <Route exact path="/" render={(routerProps) => <HomePage data={this.state.appData.homePage} {...routerProps} />} />
+            <Route path="/work" render={(routerProps) => <ProjectPage data={this.state.appData.projectPage} {...routerProps} />} />
+            <Route path="/about" render={(routerProps) => <AboutPage data={this.state.appData.aboutPage} {...routerProps} />} />
+
+            {/* <Route path="/work" component={ProjectPage}/>
+            <Route path="/about" component={AboutPage}/> */}
           </div>
+
           <Footer />
         </div>
       </HashRouter>
     );
   }
-}
-
-export default App;
+};
