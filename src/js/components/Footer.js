@@ -1,10 +1,16 @@
 import React, { Component } from 'react';
-// import '../../scss/components/_ProjectItem.scss';
+import '../../scss/components/_Footer.scss';
 
 class Footer extends Component {
   render() {
     return (
-      <h2 className="display3">Footer</h2>
+      <footer className="footer">
+        <ul>
+          <li>email</li>
+          <li>linkedin</li>
+          <li>github</li>
+        </ul>
+      </footer>
     );
   }
 }

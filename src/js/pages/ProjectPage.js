@@ -1,12 +1,15 @@
 import React, { Component } from "react";
-// import HeroSection from './HeroSection';
-// import ProjectSection from './ProjectSection';
+import ProjectDetailSection from '../components/work/ProjectDetailSection';
+import ProjectNav from '../components/work/ProjectNav';
  
 class ProjectPage extends Component {
   render() {
+    const { project, i, projectList } = this.props;
+
     return (
       <div>
-        <h2 className="display3">Project page</h2>
+        <ProjectNav i={i} projectList={projectList} />
+        <ProjectDetailSection project={project} />
       </div>
     );
   }

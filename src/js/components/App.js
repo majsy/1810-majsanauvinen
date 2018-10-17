@@ -15,25 +15,33 @@ export default class App extends Component {
     super();
 
     this.state = {
-      appData: data,
-      dataIsLoaded: false
+      appData: data
     }
   }
 
+  ProjectRouteList() {
+    const { projects } = this.state.appData;
+
+    return projects.map((item, index) => (
+      <Route path={`/work/${item.id}`} 
+        key={`project_route_${index}`} 
+        render={(routerProps) => 
+        <ProjectPage project={item} i={index} projectList={projects} {...routerProps} />
+      } />
+    ));
+  }
+
   render() {
+    const { homePage, aboutPage, projects } = this.state.appData;
+
     return (
       <HashRouter>
         <div className="App">
           <Header />
 
-          <div className="content">
-            <Route exact path="/" render={(routerProps) => <HomePage data={this.state.appData.homePage} {...routerProps} />} />
-            <Route path="/work" render={(routerProps) => <ProjectPage data={this.state.appData.projectPage} {...routerProps} />} />
-            <Route path="/about" render={(routerProps) => <AboutPage data={this.state.appData.aboutPage} {...routerProps} />} />
-
-            {/* <Route path="/work" component={ProjectPage}/>
-            <Route path="/about" component={AboutPage}/> */}
-          </div>
+          <Route exact path="/" render={(routerProps) => <HomePage data={homePage} projects={projects} {...routerProps} />} />
+          { this.ProjectRouteList() }
+          <Route path="/about" render={(routerProps) => <AboutPage data={aboutPage} {...routerProps} />} />
 
           <Footer />
         </div>

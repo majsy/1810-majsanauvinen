@@ -1,4 +1,4 @@
-@import '../base/mixins';
+@import '../../base/mixins';
 
 .HeroSection {
   @include size(100%, calc(100vh - 80px));
@@ -6,7 +6,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: $global-gutter;
+  padding: 0 $global-gutter;
 
   .display1 {
     color: $watermelon;

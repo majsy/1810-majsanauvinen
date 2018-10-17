@@ -1,0 +1,19 @@
+@import '../base/mixins';
+
+.footer {
+  @include size(100%, 200px);
+  padding: 0 $global-gutter;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #99B898;
+
+  ul {
+    list-style-type: none;
+  }
+
+  li {
+    display: inline-block;
+    padding: 0 8px;
+  }
+}

@@ -7,9 +7,8 @@ class Header extends Component {
     return (
       <header className="Header">
         <ul className="nav">
-          <li><NavLink exact to="/">Home</NavLink></li>
-          {/* <li><NavLink to="/work">Work</NavLink></li> */}
-          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink exact to="/">majsan</NavLink></li>
+          <li><NavLink to="/about">about</NavLink></li>
         </ul>
       </header>
     );

@@ -1,0 +1,14 @@
+@import '../../base/mixins';
+
+.ProjectDetailSection {
+  @include size(100%);
+  padding: 120px $global-gutter 150px;
+
+  .display3 {
+    margin-top: 10px;
+  }
+
+  .copy {
+    margin-top: 50px;
+  }
+}

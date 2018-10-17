@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import HeroSection from '../components/home/HeroSection';
-// import ProjectSection from './ProjectSection';
  
 class AboutPage extends Component {
   render() {
+    const { data } = this.props;
+
     return (
       <div>
-        <h2 className="display3">About page</h2>
-        <HeroSection data={this.props.data} />
+        <HeroSection data={data} />
       </div>
     );
   }
