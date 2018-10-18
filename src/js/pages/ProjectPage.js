@@ -4,11 +4,10 @@ import ProjectNav from '../components/work/ProjectNav';
  
 class ProjectPage extends Component {
   render() {
-    const { project, i, projectList } = this.props;
-
+    const { project, projectList } = this.props;
     return (
       <div>
-        <ProjectNav i={i} projectList={projectList} />
+        <ProjectNav currentProject={project} projectList={projectList} />
         <ProjectDetailSection project={project} />
       </div>
     );

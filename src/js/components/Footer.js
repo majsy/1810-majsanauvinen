@@ -6,9 +6,10 @@ class Footer extends Component {
     return (
       <footer className="footer">
         <ul>
-          <li>email</li>
-          <li>linkedin</li>
-          <li>github</li>
+          <li><a href="#">email</a></li>
+          <li><a href="#">instagram</a></li>
+          <li><a href="#">linkedin</a></li>
+          <li><a href="#">github</a></li>
         </ul>
       </footer>
     );

@@ -15,24 +15,31 @@ export default class App extends Component {
     super();
 
     this.state = {
-      appData: data
+      appData: data,
+      isAboutPage: false
     }
   }
 
   ProjectRouteList() {
     const { projects } = this.state.appData;
 
-    return projects.map((item, index) => (
+    return projects.map((item) => (
       <Route path={`/work/${item.id}`} 
-        key={`project_route_${index}`} 
+        key={item.id} 
         render={(routerProps) => 
-        <ProjectPage project={item} i={index} projectList={projects} {...routerProps} />
+        <ProjectPage project={item} projectList={projects} {...routerProps} />
       } />
     ));
   }
 
   render() {
     const { homePage, aboutPage, projects } = this.state.appData;
+
+    // const isAboutPage = (match, location) => {
+    //   if (!match) {
+    //     return true
+    //   }
+    // }
 
     return (
       <HashRouter>

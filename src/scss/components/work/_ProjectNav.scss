@@ -1,13 +1,26 @@
+@import '../../base/mixins';
+
 .ProjectNav {
   padding: 0 50px;
   position: fixed;
-  top: 110px;
+  top: 140px;
   right: 0;
   text-align: right;
 
   ul {
     li {
-      
+      margin-bottom: 15px;
+      font-family: 'Karla', sans-serif;
+      font-size: 1.3rem;
+      font-style: italic;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $lavender;
+      }
     }
   }
 }

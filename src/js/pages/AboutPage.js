@@ -1,13 +1,15 @@
 import React, { Component } from "react";
-import HeroSection from '../components/home/HeroSection';
+import AboutSection from '../components/about/AboutSection';
  
 class AboutPage extends Component {
   render() {
-    const { data } = this.props;
+    const { data, routerProps } = this.props;
+
+    console.log(routerProps)
 
     return (
       <div>
-        <HeroSection data={data} />
+        <AboutSection data={data} />
       </div>
     );
   }

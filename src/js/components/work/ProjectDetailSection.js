@@ -7,9 +7,9 @@ export default class ProjectDetailsSection extends Component {
 
     return (
       <div className="ProjectDetailSection">
-        <h2 className="display2">{project.title}</h2>
-        <h3 className="display3">{project.subtitle}</h3>
-        <p className="copy">{project.description}</p>
+        <h2 className="display2 title">{project.title}</h2>
+        <h3 className="display3 subtitle">{project.subtitle}</h3>
+        <p className="copy description">{project.description}</p>
       </div>
     );
   }

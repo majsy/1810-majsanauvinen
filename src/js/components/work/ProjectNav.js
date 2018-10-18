@@ -3,33 +3,17 @@ import { NavLink } from 'react-router-dom'
 import '../../../scss/components/work/_ProjectNav.scss';
 
 class ProjectNav extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      
-    }
-  }
-
-  // getNextProject() {
-  //   const { i, projectList } = this.props;
-  //   const nextIndex = projectList[i+1] <= projectList.length ? true : false;
-
-  //   const nextProject = nextIndex.id
-
-  //   if (nextProject) {
-  //     return (
-  //       <li><NavLink to={`/work/${nextProject}`}>next</NavLink></li>
-  //     )
-  //   }
-  // }
-
   render() { 
+    const { currentProject, projectList } = this.props;
+    const index = projectList.indexOf(currentProject);
+    const next = this.props.projectList[index + 1];
+    const previous = this.props.projectList[index - 1];
+
     return (
       <nav className="ProjectNav">
         <ul className="nav-list">
-          {/* { this.getNextProject() } */}
-          <li><NavLink to="/about">prev</NavLink></li>
+          { next !== undefined && <li><NavLink to={`/work/${next.id}`}>next</NavLink></li> }
+          { previous !== undefined && <li><NavLink to={`/work/${previous.id}`}>previous</NavLink></li> }
         </ul>
       </nav>
     );

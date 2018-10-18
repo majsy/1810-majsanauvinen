@@ -16,7 +16,7 @@ body {
   font-weight: 700;
   font-size: 4rem;
   line-height: 1.1;
-  letter-spacing: -1px;
+  letter-spacing: -0.9px;
 }
 
 .display2 {
@@ -29,7 +29,9 @@ body {
 }
 
 .copy {
-  font-size: 1.2rem;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
 }
 
 @include breakpoint(tablet) {

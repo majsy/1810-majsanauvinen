@@ -9,7 +9,7 @@ class ProjectItem extends Component {
     return (
       <NavLink className="ProjectItem" to={`/work/${project.id}`}>
         <h2 className="display2">{project.title}</h2>
-        <h3 className="display3">{project.subtitle}</h3>
+        <h3 className="copy">{project.subtitle}</h3>
       </NavLink>
     );
   }

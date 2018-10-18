@@ -28,11 +28,10 @@
   "homePage": {
     "heroSection": {
       "title": "I'm Majsan, a Swedish developer and creative mind based in New York."
-    },
-    "projectSection": {
     }
   },
   "aboutPage": {
-    "title": "gotta stay funky every damn day."
+    "title": "Hej!",
+    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum."
   }
 }
