@@ -1,21 +1,36 @@
 @import '../../base/mixins';
 
 .AboutSection {
+  min-height: calc(100vh - #{$footer-height});
   display: flex;
-  padding: 80px $global-gutter 100px;
-  background-color: $lavender;
+  padding: $global-top $global-gutter 100px;
+  // background-color: $orchid;
+  background-color: $baby-peach;
 
   .left-container {
-    width: 55%;
+    width: 65%;
+    padding-right: 70px;
+
+    .title,
+    .copy {
+      color: $purple-dark;
+    }
+
+    .copy {
+      margin-bottom: 18px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
   }
 
   .right-container {
-    width: 45%;
+    width: 35%;
     overflow: hidden;
     height: 0;
-    padding-top: 50%;
+    padding-top: 38%;
     position: relative;
-    // max-width: 400px;
 
     .img-container {
       position: absolute;

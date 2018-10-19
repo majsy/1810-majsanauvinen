@@ -2,5 +2,6 @@
 
 .ProjectOverviewSection {
   @include size(100%);
-  padding: 0 $global-gutter;
+  padding: $global-top $global-gutter 50px;
+  background-color: $baby-peach;
 }

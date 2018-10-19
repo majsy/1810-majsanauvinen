@@ -1,26 +1,33 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import '../../scss/components/_Header.scss';
+import {withRouter} from 'react-router'
+import * as classNames from 'classnames';
+import  { ROUTE } from '../common/routes';
 
 class Header extends Component {
   constructor() {
     super();
 
     this.state = {
-      isAboutPage: false
+      
     }
   }
 
   render() {
+    const { location } = this.props;
+
     return (
-      <header className="Header">
+      <header className={classNames("Header", {
+        isAboutPage: location.pathname === ROUTE.ABOUT
+      })}>
         <ul className="nav">
-          <li className="home"><NavLink exact to="/">majsan</NavLink></li>
-          <li><NavLink to="/about">about</NavLink></li>
+          <li className="home"><NavLink exact to={ROUTE.HOME}>majsan</NavLink></li>
+          <li><NavLink to={ROUTE.ABOUT}>about</NavLink></li>
         </ul>
       </header>
     );
   }
 }
 
-export default Header;
+export default withRouter(Header);

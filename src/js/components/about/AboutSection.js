@@ -9,13 +9,13 @@ class AboutSection extends Component {
     return (
       <div className="AboutSection">
         <div className="left-container">
-          <h2 className="display1">{data.title}</h2>
-          <p className="copy">{data.copy}</p>
+          {/* <h2 className="display1 title">{data.title}</h2> */}
+          <p className="display5 copy">{data.copy.p1}</p>
+          <p className="display5 copy">{data.copy.p2}</p>
           
         </div>
         <div className="right-container">
           <div className="img-container"></div>
-          {/* <img className="img" src={img} alt="Majsan" /> */}
         </div>
       </div>
     );

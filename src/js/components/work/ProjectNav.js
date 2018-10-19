@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom'
 import '../../../scss/components/work/_ProjectNav.scss';
+import  { ROUTE } from '../../common/routes';
 
 class ProjectNav extends Component {
   render() { 
@@ -12,8 +13,8 @@ class ProjectNav extends Component {
     return (
       <nav className="ProjectNav">
         <ul className="nav-list">
-          { next !== undefined && <li><NavLink to={`/work/${next.id}`}>next</NavLink></li> }
-          { previous !== undefined && <li><NavLink to={`/work/${previous.id}`}>previous</NavLink></li> }
+          { next !== undefined && <li><NavLink to={`${ROUTE.WORK}${next.id}`}>next</NavLink></li> }
+          { previous !== undefined && <li><NavLink to={`${ROUTE.WORK}${previous.id}`}>previous</NavLink></li> }
         </ul>
       </nav>
     );

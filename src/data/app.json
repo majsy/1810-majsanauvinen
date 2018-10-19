@@ -32,6 +32,41 @@
   },
   "aboutPage": {
     "title": "Hej!",
-    "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum."
+    "copy": {
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "p2": "Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum." 
+    },
+    "experience": {
+
+    }
+  },
+  "projectPage": {
+
+  },
+  "header": {
+    "nav": [
+      "majsan",
+      "about"
+    ]
+  },
+  "footer": {
+    "nav": [
+      {
+        "label": "email",
+        "url": "mailto:madeleineauvinen@gmail.com"
+      },
+      {
+        "label": "instagram",
+        "url": "https://www.instagram.com/majsanauvinen/"
+      },
+      {
+        "label": "linkedin",
+        "url": "http://se.linkedin.com/in/madeleineauvinen"
+      },
+      {
+        "label": "github",
+        "url": "https://github.com/majsy"
+      }
+    ]
   }
 }

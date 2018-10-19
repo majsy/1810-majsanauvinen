@@ -8,6 +8,7 @@ import HomePage from '../pages/HomePage';
 import ProjectPage from '../pages/ProjectPage';
 import AboutPage from '../pages/AboutPage';
 import data from "../../data/app.json";
+import  { ROUTE } from '../common/routes'
 
 
 export default class App extends Component {
@@ -15,8 +16,7 @@ export default class App extends Component {
     super();
 
     this.state = {
-      appData: data,
-      isAboutPage: false
+      appData: data
     }
   }
 
@@ -24,7 +24,7 @@ export default class App extends Component {
     const { projects } = this.state.appData;
 
     return projects.map((item) => (
-      <Route path={`/work/${item.id}`} 
+      <Route path={`${ROUTE.WORK}${item.id}`} 
         key={item.id} 
         render={(routerProps) => 
         <ProjectPage project={item} projectList={projects} {...routerProps} />
@@ -33,24 +33,18 @@ export default class App extends Component {
   }
 
   render() {
-    const { homePage, aboutPage, projects } = this.state.appData;
-
-    // const isAboutPage = (match, location) => {
-    //   if (!match) {
-    //     return true
-    //   }
-    // }
+    const { homePage, aboutPage, projects, footer, header } = this.state.appData;
 
     return (
       <HashRouter>
         <div className="App">
           <Header />
 
-          <Route exact path="/" render={(routerProps) => <HomePage data={homePage} projects={projects} {...routerProps} />} />
+          <Route exact path={ROUTE.HOME} render={(routerProps) => <HomePage data={homePage} projects={projects} {...routerProps} />} />
           { this.ProjectRouteList() }
-          <Route path="/about" render={(routerProps) => <AboutPage data={aboutPage} {...routerProps} />} />
+          <Route path={ROUTE.ABOUT} render={(routerProps) => <AboutPage data={aboutPage} {...routerProps} />} />
 
-          <Footer />
+          <Footer data={footer} />
         </div>
       </HashRouter>
     );

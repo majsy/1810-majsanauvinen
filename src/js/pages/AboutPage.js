@@ -3,9 +3,7 @@ import AboutSection from '../components/about/AboutSection';
  
 class AboutPage extends Component {
   render() {
-    const { data, routerProps } = this.props;
-
-    console.log(routerProps)
+    const { data } = this.props;
 
     return (
       <div>

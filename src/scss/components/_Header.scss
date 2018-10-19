@@ -2,7 +2,7 @@
 
 .Header {
   @include size(100%, auto);
-  padding: 0 50px;
+  padding: 0 40px;
   position: fixed;
   top: 0;
   right: 0;
@@ -14,26 +14,37 @@
     margin-top: 40px;
 
     .active {
-      // color: $purple;
+      text-decoration: line-through;
     }
-  }
 
-  li {
-    margin-bottom: 15px;
-    font-family: 'Karla', sans-serif;
-    font-size: 1.3rem;
 
-    &.home {
+    li {
+      margin-bottom: 12px;
+      font-family: 'Karla', sans-serif;
       font-size: 1.4rem;
-      font-weight: 700;
-    }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+      &.home {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
 
-    a {
-      color: $lavender-lighter;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: $red;
+      }
     }
   }
+
+  // &.isAboutPage {
+  //   ul {
+  //     li {
+  //       a {
+  //         color: $lavender-lighter;
+  //       }
+  //     }
+  //   }
+  // }
 }

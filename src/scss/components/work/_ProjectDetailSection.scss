@@ -2,17 +2,21 @@
 
 .ProjectDetailSection {
   @include size(100%);
-  padding: 80px $global-gutter 100px;
+  padding: $global-top $global-gutter 100px;
+  background-color: $baby-peach;
 
   .title {
     font-size: 4.8rem;
+    color: $purple-dark;
   }
 
   .subtitle {
-    margin-top: 10px;
+    margin-left: 5px;
+    color: $purple;
   }
 
-  .description {
+  .copy {
     margin-top: 50px;
+    color: $purple-dark;
   }
 }
