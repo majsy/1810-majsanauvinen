@@ -5,7 +5,7 @@ $black: #000000;
 $red: #d20e35;
 // $red: #A6192E;
 
-$baby-peach: #fcebe9;
+$baby-peach: #fceee9;
 
 $purple-dark: #554087;
 $purple: #8670bb;
@@ -13,14 +13,16 @@ $orchid: #D2BBFF;
 
 // sizes
 $global-gutter: 100px;
-$global-gutter-tablet: 50px;
-$global-gutter-mobile: 20px; 
+$global-gutter-tablet: 60px;
+$global-gutter-mobile: 28px; 
 
 $global-top: 120px;
+$global-top-tablet: 100px;
+$global-top-mobile: 65px;
 
 $footer-height: 150px;
 
-$bp-desktop: 1280px;
+$bp-desktop: 1025px;
 $bp-tablet: 1024px;
 $bp-mobile: 768px;
 $bp-mobile-s: 480px;

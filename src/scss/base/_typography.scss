@@ -60,6 +60,10 @@ body {
   .display3 {
     font-size: 1.2rem;
   }
+
+  .display5 {
+    // font-size: 1.2rem;
+  }
 }
 
 @include breakpoint(mobile-s) {

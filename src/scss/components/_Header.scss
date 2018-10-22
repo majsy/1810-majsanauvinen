@@ -17,7 +17,6 @@
       text-decoration: line-through;
     }
 
-
     li {
       margin-bottom: 12px;
       font-family: 'Karla', sans-serif;
@@ -38,13 +37,28 @@
     }
   }
 
-  // &.isAboutPage {
-  //   ul {
-  //     li {
-  //       a {
-  //         color: $lavender-lighter;
-  //       }
-  //     }
-  //   }
-  // }
+  @include breakpoint(tablet) {
+    padding: 0 25px;
+
+    ul {
+      margin-top: 30px;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    padding: 0 18px;
+
+    ul {
+      margin-top: 32px;
+
+      li {
+        margin-bottom: 16px;
+        // font-size: 1.3rem;
+
+        &.home {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }

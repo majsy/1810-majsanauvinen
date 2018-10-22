@@ -8,8 +8,8 @@
   background-color: $baby-peach;
 
   .left-container {
-    width: 65%;
-    padding-right: 70px;
+    width: 70%;
+    padding-right: 100px;
 
     .title,
     .copy {
@@ -22,14 +22,19 @@
       &:last-child {
         margin-bottom: 0;
       }
+
+      a,
+      span {
+        color: $red;
+      }
     }
   }
 
   .right-container {
-    width: 35%;
+    width: 30%;
     overflow: hidden;
     height: 0;
-    padding-top: 38%;
+    padding-top: 33%;
     position: relative;
 
     .img-container {
@@ -41,6 +46,57 @@
       background-position: center;
       background-size: cover;
       background-image: url('../../../images/majsan.jpg');
+    }
+
+    .img-mobile {
+      display: none;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding: $global-top-tablet $global-gutter-tablet 100px;
+
+    .left-container {
+      width: 60%;
+      padding-right: 50px;
+    }
+
+    .right-container {
+      width: 40%;
+      padding-top: 45%;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    flex-direction: column;
+    align-items: flex-end;
+    padding: $global-top-mobile $global-gutter-mobile 100px;
+
+    .left-container {
+      width: 100%;
+      padding-right: 0;
+      order: 2;
+      margin-top: 40px;
+    }
+
+    .right-container {
+      width: 65%;
+      padding-top: 70%;
+      order: 1;
+
+      .img-container {
+        left: auto;
+        right: 0;
+      }
+    }
+  }
+
+  @include breakpoint(mobile-s) { 
+    align-items: center;
+
+    .right-container {
+      width: 100%;
+      padding-top: 108%;
     }
   }
 }
