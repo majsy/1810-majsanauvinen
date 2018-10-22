@@ -7,30 +7,44 @@
   justify-content: center;
   flex-direction: column;
   background-color: $baby-peach;
-  
-  &.isAboutPage {
-    // background-color: $orchid;
-  }
 
   ul {
     list-style-type: none;
+
+    li {
+      display: inline-block;
+      padding: 0 10px;
+  
+      &:first-child {
+        padding: 0 10px 0 0;
+      }
+  
+      &:last-child {
+        padding: 0 0 0 10px;
+      }
+  
+      a {
+        color: $red;
+        // font-weight: 700;
+      }
+    }
   }
 
-  li {
-    display: inline-block;
-    padding: 0 10px;
+  @include breakpoint(tablet) {
+    padding: 0 $global-gutter-tablet;
+  }
 
-    &:first-child {
-      padding: 0 10px 0 0;
-    }
+  @include breakpoint(mobile) {
+    padding: 0 $global-gutter-mobile;
+    align-items: center;
+    height: $footer-height-mobile;
+  }
 
-    &:last-child {
-      padding: 0 0 0 10px;
-    }
-
-    a {
-      color: $red;
-      // font-weight: 700;
+  @include breakpoint(mobile-s) {
+    ul {
+      li {
+        font-size: 1rem;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@ class Footer extends Component {
     const { data } = this.props;
 
     return data.nav.map((item, index) => (
-      <li key={`nav_item_${index}`}>
+      <li className="display5" key={`nav_item_${index}`}>
         <a href={item.url} target="_blank">{item.label}</a>
       </li>
     ));
