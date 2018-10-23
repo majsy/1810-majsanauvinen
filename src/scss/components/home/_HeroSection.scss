@@ -7,8 +7,29 @@
   justify-content: center;
   flex-direction: column;
   padding: 0 $global-gutter;
+  position: relative;
 
-  .display1 {
+  .display1,
+  .scroll-label {
     color: $orchid;
+  }
+
+  .scroll-label {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 $global-gutter-tablet;
+  }
+
+  @include breakpoint(mobile) {
+    padding: 0 $global-gutter-mobile;
+  }
+
+  @include breakpoint(mobile-s) {
+    padding: 0 $global-gutter-mobile-s;
   }
 }

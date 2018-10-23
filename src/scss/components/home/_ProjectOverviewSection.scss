@@ -4,4 +4,16 @@
   @include size(100%);
   padding: $global-top $global-gutter 50px;
   background-color: $baby-peach;
+
+  @include breakpoint(tablet) {
+    padding: $global-top-tablet $global-gutter-tablet 50px;
+  }
+
+  @include breakpoint(mobile) {
+    padding: $global-top-mobile $global-gutter-mobile 50px;
+  }
+
+  @include breakpoint(mobile-s) {
+    padding: $global-top-mobile-s $global-gutter-mobile-s 50px;
+  }
 }

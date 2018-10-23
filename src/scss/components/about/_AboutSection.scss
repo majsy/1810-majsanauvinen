@@ -4,7 +4,6 @@
   min-height: calc(100vh - #{$footer-height});
   display: flex;
   padding: $global-top $global-gutter 100px;
-  // background-color: $orchid;
   background-color: $baby-peach;
 
   .left-container {
@@ -69,8 +68,8 @@
 
   @include breakpoint(mobile) {
     flex-direction: column;
-    align-items: flex-end;
-    padding: $global-top-mobile $global-gutter-mobile 100px;
+    padding: $global-top-mobile $global-gutter-mobile 50px;
+    // align-items: flex-start;
 
     .left-container {
       width: 100%;
@@ -81,22 +80,22 @@
 
     .right-container {
       width: 65%;
-      padding-top: 70%;
+      padding-top: 60%;
       order: 1;
 
       .img-container {
-        left: auto;
-        right: 0;
+        background-image: url('../../../images/majsan-mobile.jpg');
       }
     }
   }
 
-  @include breakpoint(mobile-s) { 
+  @include breakpoint(mobile-s) {
     align-items: center;
+    padding: $global-top-mobile-s $global-gutter-mobile-s 50px;
 
     .right-container {
       width: 100%;
-      padding-top: 108%;
+      padding-top: 90%;
     }
   }
 }

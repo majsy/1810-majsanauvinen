@@ -8,7 +8,8 @@ import HomePage from '../pages/HomePage';
 import ProjectPage from '../pages/ProjectPage';
 import AboutPage from '../pages/AboutPage';
 import data from "../../data/app.json";
-import  { ROUTE } from '../common/routes'
+import  { ROUTE } from '../common/routes';
+import { createBrowserHistory } from 'history';
 
 
 export default class App extends Component {
@@ -16,7 +17,8 @@ export default class App extends Component {
     super();
 
     this.state = {
-      appData: data
+      appData: data,
+      currentProject: null
     }
   }
 
@@ -35,10 +37,13 @@ export default class App extends Component {
   render() {
     const { homePage, aboutPage, projects, footer, header } = this.state.appData;
 
+    const history = createBrowserHistory()
+    history.listen(_ => {window.scrollTo(0, 0)})
+
     return (
-      <HashRouter>
+      <HashRouter history={history}>
         <div className="App">
-          <Header />
+          <Header projectList={projects} />
 
           <Route exact path={ROUTE.HOME} render={(routerProps) => <HomePage data={homePage} projects={projects} {...routerProps} />} />
           { this.ProjectRouteList() }

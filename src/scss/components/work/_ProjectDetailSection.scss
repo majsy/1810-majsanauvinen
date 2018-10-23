@@ -2,21 +2,38 @@
 
 .ProjectDetailSection {
   @include size(100%);
-  padding: $global-top $global-gutter 100px;
+  padding: $global-top $global-gutter 50px;
   background-color: $baby-peach;
 
-  .title {
-    font-size: 4.8rem;
-    color: $purple-dark;
-  }
-
   .subtitle {
-    margin-left: 5px;
-    color: $purple;
+    margin-top: 8px;
   }
 
   .copy {
     margin-top: 50px;
-    color: $purple-dark;
+  }
+
+  @include breakpoint(tablet) {
+    padding: $global-top-tablet $global-gutter-tablet 50px;
+  }
+
+  @include breakpoint(mobile) {
+    padding: $global-top-mobile $global-gutter-mobile 50px;
+
+    .copy {
+      margin-top: 40px;
+    }
+
+    .subtitle {
+      margin-top: 5px;
+    }
+  }
+
+  @include breakpoint(mobile-s) {
+    padding: $global-top-mobile-s $global-gutter-mobile-s 50px;
+
+    .copy {
+      margin-top: 30px;
+    }
   }
 }

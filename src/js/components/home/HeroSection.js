@@ -8,6 +8,7 @@ class HeroSection extends Component {
     return (
       <div className="HeroSection">
         <h1 className="display1">{data.title}</h1>
+        <h5 className="display5 scroll-label">{data.scrollLabel}</h5>
       </div>
     );
   }

@@ -5,10 +5,11 @@ import ProjectItem from './ProjectItem';
 export default class ProjectOverviewSection extends Component {
   ProjectListItem() {
     const { projects } = this.props;
+    const lastIndex = projects.length - 1;
 
     return projects.map((item, index) => (
       <li key={`project_${index}`}>
-        <ProjectItem project={item} />
+        <ProjectItem project={item} lastItem={index === lastIndex ? true : false} />
       </li>
     ));
   }

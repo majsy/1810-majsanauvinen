@@ -7,7 +7,7 @@ export default class ProjectDetailsSection extends Component {
 
     return (
       <div className="ProjectDetailSection">
-        <h2 className="display2 title">{project.title}</h2>
+        <h2 className="display2 title" dangerouslySetInnerHTML={{__html: project.title}}></h2>
         <h3 className="display3 subtitle">{project.subtitle}</h3>
         <p className="display5 copy">{project.description}</p>
       </div>

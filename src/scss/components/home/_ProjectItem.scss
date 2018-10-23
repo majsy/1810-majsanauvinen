@@ -4,13 +4,28 @@
   margin: 0 0 50px 0;
   display: block;
 
+  &.lastItem {
+    margin: 0;
+  }
+
   .title {
     color: $purple-dark;
+
+    span {
+      display: block;
+    }
   }
 
   .subtitle {
     color: $purple;
-    font-size: 1.3rem;
-    margin-left: 5px;
+    // margin-top: 8px;
+  }
+
+  @include breakpoint(mobile) {
+    margin: 0 0 40px 0;
+
+    .subtitle {
+      // margin-top: 5px;
+    }
   }
 }

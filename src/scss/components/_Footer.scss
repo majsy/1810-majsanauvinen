@@ -36,11 +36,13 @@
 
   @include breakpoint(mobile) {
     padding: 0 $global-gutter-mobile;
-    align-items: center;
     height: $footer-height-mobile;
   }
 
   @include breakpoint(mobile-s) {
+    padding: 0 $global-gutter-mobile-s;
+    align-items: center;
+
     ul {
       li {
         font-size: 1rem;

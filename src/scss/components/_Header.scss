@@ -18,12 +18,12 @@
     }
 
     li {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
       font-family: 'Karla', sans-serif;
-      font-size: 1.4rem;
+      font-size: 1.5rem;
 
       &.home {
-        font-size: 1.5rem;
+        // font-size: 1.6rem;
         font-weight: 700;
       }
 
@@ -49,16 +49,20 @@
     padding: 0 18px;
 
     ul {
-      margin-top: 32px;
+      margin-top: 28px;
 
       li {
-        margin-bottom: 16px;
-        // font-size: 1.3rem;
+        // margin-bottom: 16px;
+        font-size: 1.4rem;
 
         &.home {
-          font-size: 1.4rem;
+          // font-size: 1.4rem;
         }
       }
     }
+  }
+
+  @include breakpoint(mobile-s) {
+    padding: 0 10px;
   }
 }
