@@ -15,7 +15,7 @@ class Footer extends Component {
   }
 
   render() {
-    const { location } = this.props;
+    const { location, data } = this.props;
 
     return (
       <footer className={classNames("Footer", {
@@ -24,6 +24,7 @@ class Footer extends Component {
         <ul>
           { this.NavListItem() }
         </ul>
+        <h5 className="display5 copyright">{data.copyright}</h5>
       </footer>
     );
   }

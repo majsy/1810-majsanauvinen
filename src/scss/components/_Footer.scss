@@ -4,8 +4,8 @@
   @include size(100%, $footer-height);
   padding: 0 $global-gutter;
   display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   background-color: $baby-peach;
 
   ul {
@@ -14,6 +14,7 @@
     li {
       display: inline-block;
       padding: 0 10px;
+      font-size: 1.1rem;
   
       &:first-child {
         padding: 0 10px 0 0;
@@ -25,9 +26,13 @@
   
       a {
         color: $red;
-        // font-weight: 700;
       }
     }
+  }
+
+  .copyright {
+    color: $red;
+    font-size: .8rem;
   }
 
   @include breakpoint(tablet) {
@@ -37,6 +42,13 @@
   @include breakpoint(mobile) {
     padding: 0 $global-gutter-mobile;
     height: $footer-height-mobile;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+
+    .copyright {
+      margin-top: 12px;
+    }
   }
 
   @include breakpoint(mobile-s) {

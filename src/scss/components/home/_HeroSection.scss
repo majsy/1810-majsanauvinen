@@ -1,7 +1,7 @@
 @import '../../base/mixins';
 
 .HeroSection {
-  @include size(100%, calc(100vh - 50px));
+  @include size(100%, calc(100vh - 40px));
   background-color: $purple-dark;
   display: flex;
   justify-content: center;
