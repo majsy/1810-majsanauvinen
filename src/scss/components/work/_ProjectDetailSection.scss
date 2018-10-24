@@ -9,8 +9,51 @@
     margin-top: 8px;
   }
 
-  .copy {
+  .content-wrapper {
     margin-top: 50px;
+  }
+
+  .content {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    flex-direction: column;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &.no-image,
+    &.no-copy {
+      // margin-top: 15px;
+    }
+
+    &.no-image {
+
+    }
+
+    &.no-copy {
+      .img-container {
+        margin-bottom: 0;
+      }
+    }
+
+    .img-container {
+      width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+      border: 3px solid $white;
+  
+      .img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    // .copy {
+    //   margin-top: 20px;
+    // }
   }
 
   @include breakpoint(tablet) {
@@ -18,7 +61,7 @@
   }
 
   @include breakpoint(mobile) {
-    padding: $global-top-mobile $global-gutter-mobile 50px;
+    padding: $global-top-mobile $global-gutter-mobile 70px;
 
     .copy {
       margin-top: 40px;
@@ -30,7 +73,7 @@
   }
 
   @include breakpoint(mobile-s) {
-    padding: $global-top-mobile-s $global-gutter-mobile-s 50px;
+    padding: $global-top-mobile-s $global-gutter-mobile-s 70px;
 
     .copy {
       margin-top: 30px;

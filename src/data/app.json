@@ -4,25 +4,69 @@
       "id": "stonewall",
       "title": "Stonewall Forever",
       "subtitle": "the LGBT community center + google.org",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis imperdiet viverra rutrum. Nam non lorem vel dui feugiat tristique. Maecenas tincidunt quam pharetra maximus iaculis. Quisque porttitor vulputate condimentum. In vulputate velit nibh, eget convallis ante euismod eu. Nulla quis finibus quam. Vestibulum sit amet blandit justo. Aliquam erat volutpat. Fusce in nisi feugiat, elementum magna ut, rutrum quam. Praesent a ipsum bibendum, egestas turpis posuere, placerat ipsum. Etiam sed nunc nec leo tristique scelerisque sed quis est. Aenean accumsan, lacus nec aliquam accumsan, nulla massa tempor augue, vel fermentum elit nulla in orci. Aliquam viverra et est nec viverra. Integer in dolor rutrum, finibus libero quis, venenatis risus. Nullam scelerisque urna vel justo varius, ut pretium nibh vulputate. Sed sodales ligula facilisis leo rhoncus elementum. Curabitur dictum cursus sem, in pretium quam molestie sed. Donec neque enim, porta ut tristique sed, pretium ac urna. Morbi sit amet tortor in lorem malesuada porttitor. Nullam eros tortor, laoreet non lectus at, sollicitudin malesuada eros. Fusce porttitor mauris nulla, id consequat neque placerat quis."
+      "content": [
+        {
+          "img": "/images/stonewall-1.png",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+        },
+        {
+          "img": "/images/stonewall-2.png"
+        },
+        {
+          "img": "/images/stonewall-3.png",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
+        },
+        {
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+        }
+      ]
     },
     {
       "id": "2cool4gluten",
       "title": "2cool4gluten",
       "subtitle": "personal project",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis imperdiet viverra rutrum. Nam non lorem vel dui feugiat tristique. Maecenas tincidunt quam pharetra maximus iaculis. Quisque porttitor vulputate condimentum. In vulputate velit nibh, eget convallis ante euismod eu. Nulla quis finibus quam. Vestibulum sit amet blandit justo. Aliquam erat volutpat. Fusce in nisi feugiat, elementum magna ut, rutrum quam. Praesent a ipsum bibendum, egestas turpis posuere, placerat ipsum. Etiam sed nunc nec leo tristique scelerisque sed quis est. Aenean accumsan, lacus nec aliquam accumsan, nulla massa tempor augue, vel fermentum elit nulla in orci. Aliquam viverra et est nec viverra. Integer in dolor rutrum, finibus libero quis, venenatis risus. Nullam scelerisque urna vel justo varius, ut pretium nibh vulputate. Sed sodales ligula facilisis leo rhoncus elementum. Curabitur dictum cursus sem, in pretium quam molestie sed. Donec neque enim, porta ut tristique sed, pretium ac urna. Morbi sit amet tortor in lorem malesuada porttitor. Nullam eros tortor, laoreet non lectus at, sollicitudin malesuada eros."
+      "content": [
+        {
+          "img": "/images/2cool4gluten-1.png",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+        },
+        {
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
+        }
+      ]
     },
     {
       "id": "chobani",
       "title": "Chobani.com",
       "subtitle": "chobani",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis imperdiet viverra rutrum. Nam non lorem vel dui feugiat tristique. Maecenas tincidunt quam pharetra maximus iaculis. Quisque porttitor vulputate condimentum. In vulputate velit nibh, eget convallis ante euismod eu. Nulla quis finibus quam. Vestibulum sit amet blandit justo. Aliquam erat volutpat. Fusce in nisi feugiat, elementum magna ut, rutrum quam. Praesent a ipsum bibendum, egestas turpis posuere, placerat ipsum. Etiam sed nunc nec leo tristique scelerisque sed quis est. Aenean accumsan, lacus nec aliquam accumsan, nulla massa tempor augue, vel fermentum elit nulla in orci. Aliquam viverra et est nec viverra. Integer in dolor rutrum, finibus libero quis, venenatis risus. Nullam scelerisque urna vel justo varius, ut pretium nibh vulputate. Sed sodales ligula facilisis leo rhoncus elementum. Curabitur dictum cursus sem, in pretium quam molestie sed. Donec neque enim, porta ut tristique sed, pretium ac urna. Morbi sit amet tortor in lorem malesuada porttitor. Nullam eros tortor, laoreet non lectus at, sollicitudin malesuada eros."
+      "content": [
+        {
+          "img": "/images/chobani-1.png",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+        },
+        {
+          "img": "/images/chobani-2.png"
+        },
+        {
+          "img": "/images/chobani-3.png",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
+        }
+      ]
     },
     {
       "id": "midwives4all",
       "title": "Speak up for <span>Midwifery</span>",
       "subtitle": "midwives4all",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis imperdiet viverra rutrum. Nam non lorem vel dui feugiat tristique. Maecenas tincidunt quam pharetra maximus iaculis. Quisque porttitor vulputate condimentum. In vulputate velit nibh, eget convallis ante euismod eu. Nulla quis finibus quam. Vestibulum sit amet blandit justo. Aliquam erat volutpat. Fusce in nisi feugiat, elementum magna ut, rutrum quam. Praesent a ipsum bibendum, egestas turpis posuere, placerat ipsum. Etiam sed nunc nec leo tristique scelerisque sed quis est. Aenean accumsan, lacus nec aliquam accumsan, nulla massa tempor augue, vel fermentum elit nulla in orci. Aliquam viverra et est nec viverra. Integer in dolor rutrum, finibus libero quis, venenatis risus. Nullam scelerisque urna vel justo varius, ut pretium nibh vulputate. Sed sodales ligula facilisis leo rhoncus elementum. Curabitur dictum cursus sem, in pretium quam molestie sed. Donec neque enim, porta ut tristique sed, pretium ac urna. Morbi sit amet tortor in lorem malesuada porttitor. Nullam eros tortor, laoreet non lectus at, sollicitudin malesuada eros. Fusce porttitor mauris nulla."
+      "content": [
+        {
+          "img": "/images/midwives4all-1.png",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+        },
+        {
+          "img": "/images/midwives4all-3.png",
+          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
+        }
+      ]
     }
   ],
   "homePage": {
@@ -70,6 +114,6 @@
         "url": "https://github.com/majsy"
       }
     ],
-    "copyright": "copyright © 2018 Madeleine Auvinen"
+    "copyright": "copyright © 2018 madeleine auvinen"
   }
 }

@@ -3,9 +3,10 @@
 .ProjectNav {
   padding: 0 40px;
   position: fixed;
-  top: 105px;
+  top: 130px;
   right: 0;
   text-align: right;
+  z-index: 5;
 
   ul {
     li {
@@ -29,10 +30,14 @@
   }
 
   @include breakpoint(mobile) {
+    position: absolute;
+    top: auto;
+    bottom: 0;
     padding: 0 18px;
   }
 
   @include breakpoint(mobile-s) {
-    padding: 0 10px;
+    padding: 0 15px;
+    bottom: 10px;
   }
 }

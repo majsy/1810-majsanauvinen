@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import '../../../scss/components/about/_AboutSection.scss';
-import img from '../../../images/majsan.jpg';
 
 class AboutSection extends Component {
   render() {
