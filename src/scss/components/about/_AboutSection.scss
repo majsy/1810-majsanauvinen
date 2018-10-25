@@ -44,7 +44,7 @@
       height: 100%;
       background-position: center;
       background-size: cover;
-      background-image: url('../../../images/majsan.jpg');
+      background-image: url('/images/majsan.jpg');
     }
 
     .img-mobile {
@@ -84,7 +84,7 @@
       order: 1;
 
       .img-container {
-        background-image: url('../../../images/majsan-mobile.jpg');
+        background-image: url('/images/majsan-mobile.jpg');
       }
     }
   }

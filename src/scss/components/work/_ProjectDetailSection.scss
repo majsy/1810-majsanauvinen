@@ -9,8 +9,16 @@
     margin-top: 8px;
   }
 
+  .detail-item-list {
+    margin-top: 30px;
+
+    li {
+      color: $purple
+    }
+  }
+
   .content-wrapper {
-    margin-top: 50px;
+    margin-top: 20px;
   }
 
   .content {
@@ -43,7 +51,7 @@
       width: 100%;
       height: auto;
       margin-bottom: 15px;
-      border: 3px solid $white;
+      border: 2px solid $white;
   
       .img {
         width: 100%;
@@ -51,32 +59,44 @@
       }
     }
 
-    // .copy {
-    //   margin-top: 20px;
-    // }
+    .copy {
+      width: 100%;
+    }
   }
 
   @include breakpoint(tablet) {
     padding: $global-top-tablet $global-gutter-tablet 50px;
+
+    .copy {
+      width: 100%;
+    }
   }
 
   @include breakpoint(mobile) {
     padding: $global-top-mobile $global-gutter-mobile 70px;
 
-    .copy {
-      margin-top: 40px;
-    }
-
     .subtitle {
       margin-top: 5px;
+    }
+
+    .content {
+      .img-container {
+        border: 2px solid $white;
+      }
     }
   }
 
   @include breakpoint(mobile-s) {
     padding: $global-top-mobile-s $global-gutter-mobile-s 70px;
 
-    .copy {
-      margin-top: 30px;
+    .subtitle {
+      span {
+        display: block;
+      }
     }
+
+    // .copy {
+    //   margin-top: 30px;
+    // }
   }
 }

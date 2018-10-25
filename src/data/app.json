@@ -3,21 +3,21 @@
     {
       "id": "stonewall",
       "title": "Stonewall Forever",
-      "subtitle": "the LGBT community center + google.org",
+      "subtitle": "the LGBT community center <span>+ google.org</span>",
+      "detailItems": [
+        "Front-end developer",
+        "Stink Studios"
+      ],
       "content": [
         {
-          "img": "/images/stonewall-1.png",
+          "img": "/images/stonewall-1.jpg",
           "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
         },
         {
-          "img": "/images/stonewall-2.png"
+          "img": "/images/stonewall-2.jpg"
         },
         {
-          "img": "/images/stonewall-3.png",
-          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
-        },
-        {
-          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+          "img": "/images/stonewall-3.jpg"
         }
       ]
     },
@@ -25,13 +25,13 @@
       "id": "2cool4gluten",
       "title": "2cool4gluten",
       "subtitle": "personal project",
+      "detailItems": [
+        "Concept + Art Direction + Development"
+      ],
       "content": [
         {
-          "img": "/images/2cool4gluten-1.png",
-          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
-        },
-        {
-          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
+          "img": "/images/2cool4gluten-1.jpg",
+          "copy": "Since I got diagnosed with gluten intolerance a few years ago I've often been struggling to find nice (and fun!) meat- and gluten free recipes. Therefore I created 2cool4gluten, a veggie gluten free recipe generator and inspo tool! It's a component based React app built with Webpack and Sass."
         }
       ]
     },
@@ -39,16 +39,20 @@
       "id": "chobani",
       "title": "Chobani.com",
       "subtitle": "chobani",
+      "detailItems": [
+        "Front-end developer",
+        "Stink Studios"
+      ],
       "content": [
         {
-          "img": "/images/chobani-1.png",
-          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+          "img": "/images/chobani-1.jpg",
+          "copy": "Chobani, the leading yoghurt brand in US, asked Stink Studios to create their new site as part of their big rebranding. The result is a module based and scalable site built with React and using the headless CMS Contentful for great flexibility. To respond to Chobani's huge audience we also implemented accessibility improvements such as a contrast color check on the hex values coming from the the CMS data, to guarantee a good readability of the site. "
         },
         {
-          "img": "/images/chobani-2.png"
+          "img": "/images/chobani-2.jpg"
         },
         {
-          "img": "/images/chobani-3.png",
+          "img": "/images/chobani-3.jpg",
           "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
         }
       ]
@@ -57,14 +61,17 @@
       "id": "midwives4all",
       "title": "Speak up for <span>Midwifery</span>",
       "subtitle": "midwives4all",
+      "detailItems": [
+        "Concept + Strategy + Copy + Development"
+      ],
       "content": [
         {
-          "img": "/images/midwives4all-1.png",
-          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum."
+          "img": "/images/midwives4all-1.jpg",
+          "copy": "As part of tiny studio I created a campaign for Swedens's Ministry of Foreign Affairs' initiative midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, but mainly focus on spreading awareness about the benefits of midwifery and the important role midwives have for ensuring a safe pregnancy and motherhood. The long term goal for maternal and newborn health to be a prioritized topic in every country and government."
         },
         {
-          "img": "/images/midwives4all-3.png",
-          "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
+          "img": "/images/midwives4all-3.jpg",
+          "copy": "We used thunderclap, which is a powerful crowd speaking tool, to reach out to as many people as possible. In addition to that we created a twitter recruiter where a country is targeted and influencial twitter users can be encouraged to join the cause. The campaign successfully reached a big amount of people and got supported by UN Women and Kofi Annan among others."
         }
       ]
     }
@@ -114,6 +121,6 @@
         "url": "https://github.com/majsy"
       }
     ],
-    "copyright": "copyright © 2018 madeleine auvinen"
+    "copyright": "© 2018 madeleine auvinen"
   }
 }
