@@ -8,7 +8,6 @@ class AboutSection extends Component {
     return (
       <div className="AboutSection">
         <div className="left-container">
-          {/* <h2 className="display1 title">{data.title}</h2> */}
           <p className="display5 copy" dangerouslySetInnerHTML={{__html: data.copy.p1}}></p>
           <p className="display5 copy" dangerouslySetInnerHTML={{__html: data.copy.p2}}></p>
           <p className="display5 copy" dangerouslySetInnerHTML={{__html: data.copy.p3}}></p>
