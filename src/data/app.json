@@ -4,7 +4,7 @@
       "id": "stonewall",
       "title": "Stonewall Forever",
       "subtitle": "the LGBT community center <span>+ google.org</span>",
-      "mainContent": {
+      "main": {
         "img": {
           "src": "/images/stonewall-1.jpg",
           "placeholder": "/images/stonewall-1-placeholder.jpg",
@@ -12,12 +12,18 @@
           "aspectRatioPadding": "52"
         },
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum.",
-        "detailItems": {
-          "role":  "Front-end developer",
-          "agency":  "Stink Studios"
-        }
+        "detailItems": [
+          { 
+            "title": "role",
+            "label": "front-end developer" 
+          },
+          { 
+            "title": "agency",
+            "label": "Stink Studios" 
+          }
+        ]
       },
-      "additionalContent": [
+      "additional": [
         {
           "img": {
             "src": "/images/stonewall-2.jpg",
@@ -40,7 +46,7 @@
       "id": "2cool4gluten",
       "title": "2cool4gluten",
       "subtitle": "personal project",
-      "mainContent": {
+      "main": {
         "img": {
           "src": "/images/2cool4gluten-1.jpg",
             "placeholder": "/images/2cool4gluten-1-placeholder.jpg",
@@ -48,16 +54,19 @@
             "aspectRatioPadding": "59"
         },
         "copy": "Since I got diagnosed with gluten intolerance a few years ago I've often been struggling to find nice (and fun!) meat- and gluten free recipes. Therefore I created 2cool4gluten, a veggie gluten free recipe generator and inspo tool! It's a component based React app built with Webpack and Sass.",
-        "detailItems": {
-          "role":  "Concept + Art Direction + Development"
-        }
+        "detailItems": [
+          { 
+            "title": "contribution",
+            "label": "concept + art direction + front-end" 
+          }
+        ]
       }
     },
     {
       "id": "chobani",
       "title": "Chobani.com",
       "subtitle": "chobani",
-      "mainContent": {
+      "main": {
         "img": {
           "src": "/images/chobani-1.jpg",
           "placeholder": "/images/chobani-1-placeholder.jpg",
@@ -65,12 +74,18 @@
           "aspectRatioPadding": "53.7"
         },
         "copy": "Chobani, the leading yoghurt brand in US, asked Stink Studios to create their new site as part of their big rebranding. The result is a module based and scalable site built with React and using the headless CMS Contentful for great flexibility. To respond to Chobani's huge audience we also implemented accessibility improvements such as a contrast color check on the hex values coming from the the CMS data, to guarantee a good readability of the site.",
-        "detailItems": {
-          "role":  "Front-end developer",
-          "agency": "Stink Studios"
-        }
+        "detailItems": [
+          { 
+            "title": "role",
+            "label": "front-end developer" 
+          },
+          { 
+            "title": "agency",
+            "label": "Stink Studios" 
+          }
+        ]
       },
-      "additionalContent": [
+      "additional": [
         {
           "img": {
             "src": "/images/chobani-2.jpg",
@@ -94,7 +109,7 @@
       "id": "midwives4all",
       "title": "Speak up for <span>Midwifery</span>",
       "subtitle": "midwives4all",
-      "mainContent": {
+      "main": {
         "img": {
           "src": "/images/midwives4all-1.jpg",
           "placeholder": "/images/midwives4all-1-placeholder.jpg",
@@ -102,11 +117,14 @@
           "aspectRatioPadding": "50"
         },
         "copy": "As part of tiny studio I created a campaign for Swedens's Ministry of Foreign Affairs' initiative midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, but mainly focus on spreading awareness about the benefits of midwifery and the important role midwives have for ensuring a safe pregnancy and motherhood. The long term goal for maternal and newborn health to be a prioritized topic in every country and government.",
-        "detailItems": {
-          "role":  "Concept + Strategy + Copy + Development"
-        }
+        "detailItems": [
+          { 
+            "title": "contribution",
+            "label": "concept + strategy + copy + front-end" 
+          }
+        ]
       },
-      "additionalContent": [
+      "additional": [
         {
           "img": {
             "src": "/images/midwives4all-3.jpg",
