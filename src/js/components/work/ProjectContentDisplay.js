@@ -17,7 +17,8 @@ export default class ProjectContentDisplay extends Component {
             className="img"
             alt={img.alt}
             height={'100%'}
-            placeHolder={img.placeholder}
+            wrapperClassName={"placeholder"}
+            placeholderSrc={img.placeholder}
             src={img.src}
             width={'100%'} />
         </div> : null }
