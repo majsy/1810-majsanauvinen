@@ -10,24 +10,35 @@
   }
 
   .detail-list {
-    margin-top: 30px;
+    margin-top: 40px;
+  }
 
-    li {
-      margin-bottom: 7px;
+  .item-label {
+    // color: $red;
+    color: $purple;
+  }
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      .label {
-        color: $red;
-        font-size: 1.1rem;
-      }
-    }
+  .project-link {
+    display: block;
+    margin-top: 20px;
   }
 
   .content-wrapper {
     margin-top: 40px;
+  }
+
+  .recognition-container {
+    margin-top: 40px;
+    width: 50%;
+
+    .title {
+      color: $purple-dark;
+      margin-bottom: 10px;
+    }
+
+    .item {
+      color: $purple;
+    }
   }
 
   @include breakpoint(tablet) {

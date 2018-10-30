@@ -14,14 +14,19 @@
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum.",
         "detailItems": [
           { 
-            "title": "role",
             "label": "front-end developer" 
           },
           { 
-            "title": "agency",
             "label": "Stink Studios" 
+          },
+          { 
+            "label": "2018" 
           }
-        ]
+        ],
+        "link": {
+          "label": "stonewallforever.org",
+          "url": "http://stonewallforever.org"
+        }
       },
       "additional": [
         {
@@ -40,7 +45,22 @@
             "aspectRatioPadding": "46.2"
           }
         }
-      ]
+      ],
+      "recognition": {
+        "title": "recognition",
+        "list": [
+          {
+            "source": "The New York Times",
+            "title": "New York Today: Can You Help Tell Stonewall’s Story?",
+            "url": "https://www.nytimes.com/2018/06/20/nyregion/new-york-today-stonewall-forever.html"
+          },
+          {
+            "source": "The New York Times",
+            "title": "Stonewall Inn Project to Preserve Stories Behind a Gay Rights Monument",
+            "url": "https://www.nytimes.com/2017/06/17/nyregion/stonewall-inn-lgbt-rights-google.html"
+          }
+        ]
+      }
     },
     {
       "id": "2cool4gluten",
@@ -56,10 +76,16 @@
         "copy": "Since I got diagnosed with gluten intolerance a few years ago I've often been struggling to find nice (and fun!) meat- and gluten free recipes. Therefore I created 2cool4gluten, a veggie gluten free recipe generator and inspo tool! It's a component based React app built with Webpack and Sass.",
         "detailItems": [
           { 
-            "title": "contribution",
             "label": "concept + art direction + front-end" 
+          },
+          { 
+            "label": "2017" 
           }
-        ]
+        ],
+        "link": {
+          "label": "2cool4gluten.com",
+          "url": "http://2cool4gluten.com"
+        }
       }
     },
     {
@@ -76,14 +102,19 @@
         "copy": "Chobani, the leading yoghurt brand in US, asked Stink Studios to create their new site as part of their big rebranding. The result is a module based and scalable site built with React and using the headless CMS Contentful for great flexibility. To respond to Chobani's huge audience we also implemented accessibility improvements such as a contrast color check on the hex values coming from the the CMS data, to guarantee a good readability of the site.",
         "detailItems": [
           { 
-            "title": "role",
             "label": "front-end developer" 
           },
           { 
-            "title": "agency",
             "label": "Stink Studios" 
+          },
+          { 
+            "label": "2017" 
           }
-        ]
+        ],
+        "link": {
+          "label": "chobani.com",
+          "url": "http://chobani.com"
+        }
       },
       "additional": [
         {
@@ -103,7 +134,27 @@
           },
           "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
         }
-      ]
+      ],
+      "recognition": {
+        "title": "recognition",
+        "list": [
+          {
+            "source": "awwwards",
+            "title": "Site of the Day",
+            "url": "https://www.awwwards.com/sites/chobani-com"
+          },
+          {
+            "source": "awwwards",
+            "title": "Mobile Site of the Week",
+            "url": "https://www.awwwards.com/mobile-sites/chobani-com"
+          },
+          {
+            "source": "css awards",
+            "title": "Site of the Day",
+            "url": "https://www.cssawards.net/website/chobani/"
+          }
+        ]
+      }
     },
     {
       "id": "midwives4all",
@@ -119,10 +170,16 @@
         "copy": "As part of tiny studio I created a campaign for Swedens's Ministry of Foreign Affairs' initiative midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, but mainly focus on spreading awareness about the benefits of midwifery and the important role midwives have for ensuring a safe pregnancy and motherhood. The long term goal for maternal and newborn health to be a prioritized topic in every country and government.",
         "detailItems": [
           { 
-            "title": "contribution",
             "label": "concept + strategy + copy + front-end" 
+          },
+          { 
+            "label": "2015" 
           }
-        ]
+        ],
+        "link": {
+          "label": "speakupformidwifery.com",
+          "url": "http://speakupformidwifery.com"
+        }
       },
       "additional": [
         {
@@ -131,10 +188,28 @@
             "placeholder": "/images/midwives4all-3-placeholder.jpg",
             "alt": "",
             "aspectRatioPadding": "45.7"
+          }
+        },
+        {
+          "img": {
+            "src": "/images/midwives4all-4.jpg",
+            "placeholder": "/images/midwives4all-4-placeholder.jpg",
+            "alt": "",
+            "aspectRatioPadding": "47.3"
           },
           "copy": "We used thunderclap, which is a powerful crowd speaking tool, to reach out to as many people as possible. In addition to that we created a twitter recruiter where a country is targeted and influencial twitter users can be encouraged to join the cause. The campaign successfully reached a big amount of people and got supported by UN Women and Kofi Annan among others."
         }
-      ]
+      ],
+      "recognition": {
+        "title": "recognition",
+        "list": [
+          {
+            "source": "Huffington Post",
+            "title": "Midwives4All: Professionals Who Put Women First Have the Power to Change the Future",
+            "url": "https://www.huffingtonpost.com/margot-wallstrom/midwives4all-professional_b_6827242.html"
+          }
+        ]
+      }
     }
   ],
   "homePage": {

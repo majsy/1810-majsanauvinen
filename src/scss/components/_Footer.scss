@@ -14,7 +14,6 @@
     li {
       display: inline-block;
       padding: 0 10px;
-      font-size: 1.1rem;
   
       &:first-child {
         padding: 0 10px 0 0;
@@ -54,11 +53,5 @@
   @include breakpoint(mobile-s) {
     padding: 0 $global-gutter-mobile-s;
     align-items: center;
-
-    ul {
-      li {
-        font-size: 1rem;
-      }
-    }
   }
 }

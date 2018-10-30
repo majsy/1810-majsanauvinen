@@ -8,7 +8,7 @@ class Footer extends Component {
     const { data } = this.props;
 
     return data.nav.map((item, index) => (
-      <li className="display5" key={`nav_item_${index}`}>
+      <li className="display4" key={`nav_item_${index}`}>
         <a href={item.url} target="_blank">{item.label}</a>
       </li>
     ));
@@ -24,7 +24,7 @@ class Footer extends Component {
         <ul>
           { this.NavListItem() }
         </ul>
-        <h5 className="display5 copyright">{data.copyright}</h5>
+        <h5 className="display4 copyright">{data.copyright}</h5>
       </footer>
     );
   }

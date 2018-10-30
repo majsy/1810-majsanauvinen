@@ -18,7 +18,19 @@ export default class ProjectDetailsSection extends Component {
 
     return project.main.detailItems.map((item, index) => (
       <li key={`${project.title}_detail_${index}`}>
-        <h5 className="display3 label">{item.title}: {item.label}</h5>
+        <h4 className="display4 item-label">{item.label}</h4>
+      </li>
+    ))
+  }
+
+  getRecognitionItems() {
+    const { project } = this.props
+
+    return project.recognition.list.map((item, index) => (
+      <li key={`${project.title}_recognition_${index}`}>
+        <a href={item.url} target="_blank">
+          <h4 className="display4 item">{item.source} - {item.title}</h4>
+        </a>
       </li>
     ))
   }
@@ -33,11 +45,23 @@ export default class ProjectDetailsSection extends Component {
 
         <div className="content-wrapper">
           <ProjectContentDisplay img={project.main.img} copy={project.main.copy} />
+
           <ul className="detail-list">
             { this.getDetailItems() }
           </ul>
 
+          <a className="project-link" href={project.main.link.url} target="_blank">
+            <h4 className="display4 item-label">{project.main.link.label}</h4>
+          </a>
+
           { project.additional ? this.getAdditionalContent() : null }
+          
+          { project.recognition ? <div className="recognition-container">
+            <h3 className="display3 title">{project.recognition.title}</h3>
+            <ul>
+              { this.getRecognitionItems() }
+            </ul> 
+          </div> : null }
         </div>
       </div>
     );
