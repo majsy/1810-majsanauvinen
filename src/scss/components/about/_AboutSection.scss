@@ -2,89 +2,132 @@
 
 .AboutSection {
   min-height: calc(100vh - #{$footer-height});
-  display: flex;
   padding: $global-top $global-gutter 100px;
   background-color: $baby-peach;
 
-  .left-container {
-    width: 70%;
-    padding-right: 100px;
+  .upper-container {
+    display: flex;
 
-    .title,
-    .copy {
-      color: $purple-dark;
+    .left-container {
+      width: 70%;
+      padding-right: 100px;
+  
+      .title,
+      .copy {
+        color: $purple-dark;
+      }
+  
+      .copy {
+        margin-bottom: 18px;
+  
+        &:last-child {
+          margin-bottom: 0;
+        }
+  
+        a,
+        span {
+          color: $red;
+        }
+      }
     }
 
-    .copy {
-      margin-bottom: 18px;
-
-      &:last-child {
-        margin-bottom: 0;
+    .right-container {
+      width: 30%;
+      overflow: hidden;
+      height: 0;
+      padding-top: 33%;
+      position: relative;
+  
+      .img-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-size: cover;
+        background-image: url('/images/majsan.jpg');
       }
-
-      a,
-      span {
-        color: $red;
+  
+      .img-mobile {
+        display: none;
       }
     }
   }
 
-  .right-container {
-    width: 30%;
-    overflow: hidden;
-    height: 0;
-    padding-top: 33%;
-    position: relative;
+  .lower-container {
+    display: flex;
+    margin-top: 50px;
 
-    .img-container {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-position: center;
-      background-size: cover;
-      background-image: url('/images/majsan.jpg');
+    .experience-container,
+    .education-container {
+      .title {
+        color: $purple-dark;
+        margin-bottom: 10px;
+      }
+
+      .item {
+        color: $purple;
+      }
     }
 
-    .img-mobile {
-      display: none;
+    .experience-container {
+      margin-right: 60px;
     }
   }
 
   @include breakpoint(tablet) {
     padding: $global-top-tablet $global-gutter-tablet 100px;
 
-    .left-container {
-      width: 60%;
-      padding-right: 50px;
-    }
-
-    .right-container {
-      width: 40%;
-      padding-top: 45%;
+    .upper-container {
+      .left-container {
+        width: 60%;
+        padding-right: 50px;
+      }
+  
+      .right-container {
+        width: 40%;
+        padding-top: 45%;
+      }
     }
   }
 
   @include breakpoint(mobile) {
-    flex-direction: column;
     padding: $global-top-mobile $global-gutter-mobile 50px;
-    // align-items: flex-start;
 
-    .left-container {
-      width: 100%;
-      padding-right: 0;
-      order: 2;
-      margin-top: 20px;
+    .upper-container {
+      flex-direction: column;
+
+      .left-container {
+        width: 100%;
+        padding-right: 0;
+        order: 2;
+        margin-top: 20px;
+      }
+  
+      .right-container {
+        width: 65%;
+        padding-top: 60%;
+        order: 1;
+  
+        .img-container {
+          background-image: url('/images/majsan-mobile.jpg');
+        }
+      }
     }
 
-    .right-container {
-      width: 65%;
-      padding-top: 60%;
-      order: 1;
+    .lower-container {
+      flex-direction: column;
 
-      .img-container {
-        background-image: url('/images/majsan-mobile.jpg');
+      .experience-container,
+      .education-container {
+        .title {
+          margin-bottom: 8px;
+        }
+      }
+
+      .experience-container {
+        margin: 0 0 40px 0;
       }
     }
   }
@@ -93,9 +136,11 @@
     align-items: center;
     padding: $global-top-mobile-s $global-gutter-mobile-s 50px;
 
-    .right-container {
-      width: 100%;
-      padding-top: 90%;
+    .upper-container {
+      .right-container {
+        width: 100%;
+        padding-top: 90%;
+      }
     }
   }
 }

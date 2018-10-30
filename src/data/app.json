@@ -219,14 +219,55 @@
     }
   },
   "aboutPage": {
-    "title": "Hej!",
+    "title": "about",
     "copy": {
       "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. I'm a <a href=\"http://www.hyperisland.com\" target=\"_blank\">Hyper Island</a> alumn and also hold a <span>Bachelor's degree in Advertising & PR</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "p3": "Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Previously developer at <a href=\"http://www.stinkstudios.com\" target=\"_blank\">Stink Studios</a> and now looking a new gig." 
+      "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. I'm a <a href=\"http://www.hyperisland.com\" target=\"_blank\">Hyper Island</a> alumn and also hold a <span>Bachelor's degree in Advertising & PR</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     "experience": {
-
+      "title": "experience",
+      "list": [
+        {
+          "role": "Creative developer",
+          "company": "Stink Studios",
+          "period": "Jun 17 - Sept 18",
+          "url": "http://stinkstudios.com"
+        },
+        {
+          "role": "Front-end developer",
+          "company": "Label A",
+          "period": "Sept 16 - April 17",
+          "url": "http://labela.nl"
+        },
+        {
+          "role": "Front-end developer intern",
+          "company": "Media Monks",
+          "period": "Nov 15 - May 16",
+          "url": "http://mediamonks.com"
+        }
+      ]
+    },
+    "education": {
+      "title": "education",
+      "list": [
+        {
+          "program": "Digital Media Creative",
+          "school": "Hyper Island",
+          "period": "Aug 14 - June 16",
+          "url": "http://hyperisland.com"
+        },
+        {
+          "program": "Intro to User Experience Design",
+          "school": "Superhi",
+          "period": "Sept 18",
+          "url": "http://superhi.com"
+        },
+        {
+          "program": "B.A. Advertising & PR",
+          "school": "Stockholm University",
+          "period": "Sept 11 - June 14"
+        }
+      ]
     }
   },
   "header": {
