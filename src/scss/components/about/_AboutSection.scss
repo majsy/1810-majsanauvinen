@@ -4,40 +4,40 @@
   min-height: calc(100vh - #{$footer-height});
   padding: $global-top $global-gutter 100px;
   background-color: $baby-peach;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .title {
+    font-size: 2.8rem;
+    color: $purple-dark;
+    margin: 0 0 30px 0;
+  }
 
   .upper-container {
     display: flex;
 
     .left-container {
-      width: 70%;
-      padding-right: 100px;
-  
-      .title,
-      .copy {
-        color: $purple-dark;
-      }
+      padding-right: 70px;
+      width: 65%;
   
       .copy {
         margin-bottom: 18px;
+        color: $purple-dark;
+        font-size: 1.2rem;
   
         &:last-child {
           margin-bottom: 0;
-        }
-  
-        a,
-        span {
-          color: $red;
         }
       }
     }
 
     .right-container {
-      width: 30%;
+      width: 35%;
       overflow: hidden;
       height: 0;
-      padding-top: 33%;
+      padding-top: 39%;
       position: relative;
-  
+
       .img-container {
         position: absolute;
         top: 0;
@@ -48,41 +48,52 @@
         background-size: cover;
         background-image: url('/images/majsan.jpg');
       }
-  
-      .img-mobile {
-        display: none;
-      }
     }
   }
 
-  .lower-container {
+  .list-container {
     display: flex;
-    margin-top: 50px;
+    flex-direction: column;
+    margin-top: 70px;
 
-    .experience-container,
-    .education-container {
-      .title {
+    .experience,
+    .education {
+      .subtitle {
         color: $purple-dark;
         margin-bottom: 10px;
+        font-weight: 700;
       }
 
       .item {
         color: $purple;
+
+        a {
+          color: $purple-dark;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
 
-    .experience-container {
-      margin-right: 60px;
+    .experience {
+      margin-bottom: 30px;
     }
   }
 
   @include breakpoint(tablet) {
     padding: $global-top-tablet $global-gutter-tablet 100px;
 
+    .title {
+      font-size: 2.6rem;
+      margin-top: 30px;
+    }
+
     .upper-container {
       .left-container {
-        width: 60%;
         padding-right: 50px;
+        width: 60%;
       }
   
       .right-container {
@@ -95,39 +106,50 @@
   @include breakpoint(mobile) {
     padding: $global-top-mobile $global-gutter-mobile 50px;
 
+    .title {
+      font-size: 2.4rem;
+      width: 80%;
+      margin: 0 auto 20px;
+    }
+
     .upper-container {
       flex-direction: column;
+      width: 100%;
 
       .left-container {
         width: 100%;
         padding-right: 0;
         order: 2;
-        margin-top: 20px;
+        margin: 20px auto 0;
+        width: 80%;
+
+        .copy {
+          font-size: 1.1rem;
+        }
       }
   
       .right-container {
-        width: 65%;
-        padding-top: 60%;
+        width: 60%;
         order: 1;
-  
-        .img-container {
-          background-image: url('/images/majsan-mobile.jpg');
-        }
+        align-self: flex-end;
+        position: relative;
+        right: auto;
+        padding-top: 66%;
       }
     }
 
-    .lower-container {
-      flex-direction: column;
+    .list-container {
+      margin-top: 50px;
 
-      .experience-container,
-      .education-container {
-        .title {
+      .experience,
+      .education {
+        .subtitle {
           margin-bottom: 8px;
         }
       }
 
-      .experience-container {
-        margin: 0 0 40px 0;
+      .experience {
+        margin: 0 0 20px 0;
       }
     }
   }
@@ -136,11 +158,25 @@
     align-items: center;
     padding: $global-top-mobile-s $global-gutter-mobile-s 50px;
 
+    .title {
+      font-size: 2.2rem;
+      width: 100%;
+      margin: 0 0 10px 0px;
+    }
+
     .upper-container {
-      .right-container {
+      .left-container {
         width: 100%;
-        padding-top: 90%;
       }
+
+      .right-container {
+        width: 85%;
+        padding-top: 93%;
+      }
+    }
+
+    .list-container {
+      width: 100%;
     }
   }
 }

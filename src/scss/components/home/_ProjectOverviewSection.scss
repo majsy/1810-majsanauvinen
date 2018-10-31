@@ -4,6 +4,8 @@
   @include size(100%);
   padding: $global-top $global-gutter 50px;
   background-color: $baby-peach;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @include breakpoint(tablet) {
     padding: $global-top-tablet $global-gutter-tablet 50px;

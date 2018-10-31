@@ -29,7 +29,9 @@ export default class ProjectDetailsSection extends Component {
     return project.recognition.list.map((item, index) => (
       <li key={`${project.title}_recognition_${index}`}>
         <a href={item.url} target="_blank">
-          <h4 className="display4 item">{item.source} - {item.title}</h4>
+          <h4 className="display4 item">
+            <span>{item.source}</span> &mdash; {item.title}
+          </h4>
         </a>
       </li>
     ))
@@ -57,7 +59,7 @@ export default class ProjectDetailsSection extends Component {
           { project.additional ? this.getAdditionalContent() : null }
           
           { project.recognition ? <div className="recognition-container">
-            <h3 className="display3 title">{project.recognition.title}</h3>
+            <h3 className="display3 subtitle">{project.recognition.title}</h3>
             <ul>
               { this.getRecognitionItems() }
             </ul> 
