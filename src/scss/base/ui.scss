@@ -1,0 +1,23 @@
+@import './ease';
+
+.ui-link {
+  display: inline-block;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: $red;
+    transition: width 500ms $cubic-ease-out;
+  }
+
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}

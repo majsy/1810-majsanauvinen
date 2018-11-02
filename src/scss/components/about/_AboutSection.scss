@@ -1,4 +1,5 @@
 @import '../../base/mixins';
+@import '../../base/ui';
 
 .AboutSection {
   min-height: calc(100vh - #{$footer-height});
@@ -68,11 +69,8 @@
         color: $purple;
 
         a {
-          color: $purple-dark;
-
-          &:hover {
-            text-decoration: underline;
-          }
+          color: $purple;
+          @extend .ui-link;
         }
       }
     }
@@ -108,8 +106,7 @@
 
     .title {
       font-size: 2.4rem;
-      width: 80%;
-      margin: 0 auto 20px;
+      margin-bottom: 20px;
     }
 
     .upper-container {
@@ -120,8 +117,7 @@
         width: 100%;
         padding-right: 0;
         order: 2;
-        margin: 20px auto 0;
-        width: 80%;
+        margin-top: 20px;
 
         .copy {
           font-size: 1.1rem;

@@ -7,7 +7,7 @@ class AboutSection extends Component {
 
     return data.experience.list.map((item, index) => (
       <li key={`experience_${index}`}>
-        <h4 className="display4 item">{item.role}, <a href={item.url} target="_blank">{item.company}</a>, {item.period}</h4>
+        <h4 className="display4 item">{item.role}, <a href={item.url} target="_blank" rel="noopener noreferrer">{item.company}</a>, {item.period}</h4>
       </li>
     ))
   }
@@ -17,7 +17,7 @@ class AboutSection extends Component {
 
     return data.education.list.map((item, index) => (
       <li key={`education_${index}`}>
-        <h4 className="display4 item">{item.program}, {item.url ? <a href={item.url} target="_blank">{item.school}</a> : item.school }, {item.period}</h4>
+        <h4 className="display4 item">{item.program}, {item.url ? <a href={item.url} target="_blank" rel="noopener noreferrer">{item.school}</a> : item.school }, {item.period}</h4>
       </li>
     ))
   }

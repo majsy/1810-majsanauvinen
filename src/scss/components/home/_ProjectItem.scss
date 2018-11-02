@@ -1,4 +1,6 @@
 @import '../../base/mixins';
+@import '../../base/ease';
+@import '../../base/ui';
 
 .ProjectItem {
   margin: 0 0 60px 0;
@@ -10,6 +12,20 @@
 
   .title {
     color: $purple-dark;
+    transform: translateX(0);
+    transition: transform 500ms $cubic-ease-out;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: 35px;
+      left: -75px;
+      content: '';
+      width: 0px;
+      height: 7px;
+      background-color: $red;
+      transition: width 500ms $cubic-ease-out;
+    }
 
     span {
       display: block;
@@ -18,14 +34,25 @@
 
   .subtitle {
     color: $purple;
-    // margin-top: 8px;
+    transform: translateX(0);
+    transition: transform 500ms $cubic-ease-out;
+  }
+
+  &:hover {
+    .title {
+      transform: translateX(40px);
+
+      &::before {
+        width: 60px;
+      }
+    }
+
+    .subtitle {
+      transform: translateX(40px)
+    }
   }
 
   @include breakpoint(mobile) {
     margin: 0 0 40px 0;
-
-    .subtitle {
-      // margin-top: 5px;
-    }
   }
 }

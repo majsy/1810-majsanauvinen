@@ -9,7 +9,7 @@ class Footer extends Component {
 
     return data.nav.map((item, index) => (
       <li className="display4" key={`nav_item_${index}`}>
-        <a href={item.url} target="_blank">{item.label}</a>
+        <a className="ui-link" href={item.url} target="_blank" rel="noopener noreferrer">{item.label}</a>
       </li>
     ));
   }

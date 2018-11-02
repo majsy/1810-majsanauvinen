@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Route, HashRouter } from 'react-router-dom';
-import logo from '../../logo.svg';
+// import logo from '../../logo.svg';
 import '../../scss/components/_App.scss';
 import Header from './Header';
 import Footer from './Footer';
@@ -18,9 +18,31 @@ export default class App extends Component {
 
     this.state = {
       appData: data,
-      currentProject: null
+      currentProject: null,
+      isMobileLandscape: false
     }
   }
+
+  componentDidMount() {
+    window.addEventListener('orientationchange', () => this.onOrientationChange(), false);
+  }
+
+  onOrientationChange() {
+    let orientation = 0
+
+		if (window.screen && window.screen.orientation) orientation = window.screen.orientation.angle;
+    else if (window.orientation) orientation = window.orientation
+    
+		if (window.innerWidth < 768) {
+			if (orientation === 90 || orientation === -90) {
+        this.setState({isMobileLandscape: true})
+			} else {
+        this.setState({isMobileLandscape: false})
+			}
+		} else {
+			this.setState({isMobileLandscape: false})
+		}
+	}
 
   ProjectRouteList() {
     const { projects } = this.state.appData;
@@ -35,7 +57,7 @@ export default class App extends Component {
   }
 
   render() {
-    const { homePage, aboutPage, projects, footer, header } = this.state.appData;
+    const { homePage, aboutPage, projects, footer } = this.state.appData;
 
     const history = createBrowserHistory()
     history.listen(_ => {window.scrollTo(0, 0)})

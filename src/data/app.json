@@ -17,7 +17,7 @@
             "label": "front-end developer" 
           },
           { 
-            "label": "Stink Studios" 
+            "label": "<a href=\"http://www.stinkstudios.com\" target=\"_blank\" rel=\"noopener noreferrer\">Stink Studios</a>" 
           },
           { 
             "label": "2018" 
@@ -105,7 +105,7 @@
             "label": "front-end developer" 
           },
           { 
-            "label": "Stink Studios" 
+            "label": "<a href=\"http://www.stinkstudios.com\" target=\"_blank\" rel=\"noopener noreferrer\">Stink Studios</a>" 
           },
           { 
             "label": "2017" 
@@ -222,7 +222,7 @@
     "title": "about me",
     "copy": {
       "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-      "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. I'm a <a href=\"http://www.hyperisland.com\" target=\"_blank\">Hyper Island</a> alumn and also hold a <span>Bachelor's degree in Advertising & PR</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      "p2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum. I'm a <a href=\"http://www.hyperisland.com\" target=\"_blank\" rel=\"noopener noreferrer\">Hyper Island</a> alumn and also hold a <span>Bachelor's degree in Advertising & PR</span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     "experience": {
       "title": "experience",
@@ -251,16 +251,22 @@
       "title": "education",
       "list": [
         {
-          "program": "Digital Media Creative",
-          "school": "Hyper Island",
-          "period": "Aug 14 - June 16",
-          "url": "http://hyperisland.com"
-        },
-        {
-          "program": "Intro to User Experience Design",
+          "program": "Intro to User Experience Design Course",
           "school": "Superhi",
           "period": "Sept 18",
           "url": "http://superhi.com"
+        },
+        {
+          "program": "Process Design & Facilitation Course",
+          "school": "Hyper Island",
+          "period": "Jan 17",
+          "url": "http://hyperisland.com"
+        },
+        {
+          "program": "Digital Media Creative Program",
+          "school": "Hyper Island",
+          "period": "Aug 14 - June 16",
+          "url": "http://hyperisland.com"
         },
         {
           "program": "B.A. Advertising & PR",
