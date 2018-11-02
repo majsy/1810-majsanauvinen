@@ -12,17 +12,17 @@
 
   .title {
     color: $purple-dark;
-    transform: translateX(0);
+    transform: translate3d(0,0,0);
     transition: transform 500ms $cubic-ease-out;
     position: relative;
 
     &::before {
       position: absolute;
       top: 35px;
-      left: -75px;
+      left: -96px;
       content: '';
       width: 0px;
-      height: 7px;
+      height: 8px;
       background-color: $red;
       transition: width 500ms $cubic-ease-out;
     }
@@ -34,25 +34,54 @@
 
   .subtitle {
     color: $purple;
-    transform: translateX(0);
+    transform: translate3d(0,0,0);
     transition: transform 500ms $cubic-ease-out;
   }
 
   &:hover {
     .title {
-      transform: translateX(40px);
-
       &::before {
-        width: 60px;
+        width: 85px;
       }
     }
 
-    .subtitle {
-      transform: translateX(40px)
+    .subtitle,
+    .title {
+      transform: translate3d(42px,0,0)
+    }
+  }
+
+  @include breakpoint(tablet) {
+    .title {
+      &::before {
+        left: -85px;
+        height: 7px;
+      }
+    }
+
+    &:hover {
+      .title {
+        &::before {
+          width: 70px;
+        }
+      }
     }
   }
 
   @include breakpoint(mobile) {
     margin: 0 0 40px 0;
+
+    .title {  
+      &::before {
+        display: none;
+      }
+    }
+
+    &:hover {
+      .title,
+      .subtitle {
+        transform: translate3d(0,0,0);
+      }
+    }
   }
 }
