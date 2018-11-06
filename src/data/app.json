@@ -73,7 +73,7 @@
             "alt": "",
             "aspectRatioPadding": "59"
         },
-        "copy": "Since I got diagnosed with gluten intolerance a few years ago I've often been struggling to find nice (and fun!) meat- and gluten free recipes. Therefore I created 2cool4gluten, a veggie gluten free recipe generator and inspo tool! It's a component based React app built with Webpack and Sass.",
+        "copy": "Since I got diagnosed with celiac disease a few years ago I’ve often been struggling to find meat- and gluten free recipes that are nice and inspiring (and not as in just ‘GF pasta pesto’ or a lame salad). To solve this I created 2cool4gluten.com, a veggie gluten free recipe generator and inspo tool for people on a GF diet, and all their friends who love throwing dinner parties. It’s a component based React app built with Webpack and Sass.",
         "detailItems": [
           { 
             "label": "concept - art direction - front-end" 
@@ -167,7 +167,7 @@
           "alt": "",
           "aspectRatioPadding": "50"
         },
-        "copy": "As part of tiny studio I created a campaign for Swedens's Ministry of Foreign Affairs' initiative midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, but mainly focus on spreading awareness about the benefits of midwifery and the important role midwives have for ensuring a safe pregnancy and motherhood. The long term goal for maternal and newborn health to be a prioritized topic in every country and government.",
+        "copy": "Together with three friends from Hyper Island I created a campaign for Sweden’s Ministry of Foregin Affairs’ initiative called Midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, by mainly focusing on emphasizing the benefits of midwifery, and the important role midwives have when it comes to ensure a safe pregnancy and motherhood for all women. The long term goal is for maternal and newborn health to be a prioritized topic in every country and government.",
         "detailItems": [
           { 
             "label": "concept - strategy - copy - front-end" 
@@ -197,7 +197,25 @@
             "alt": "",
             "aspectRatioPadding": "47.3"
           },
-          "copy": "We used thunderclap, which is a powerful crowd speaking tool, to reach out to as many people as possible. In addition to that we created a twitter recruiter where a country is targeted and influencial twitter users can be encouraged to join the cause. The campaign successfully reached a big amount of people and got supported by UN Women and Kofi Annan among others."
+          "copy": "To highlight the problem and solution, we created an informative yet emotional video, where I was apart of writing the manuscript. To reach out to as many social media users as possible we used Thunderclap, which is a powerful crowd speaking tool. In addition to this we built a dropdown Twitter recruit where a specific country is targeted and a list of influential Twitter users popular in that country can be shuffled and encouraged to join the cause through Thunderclap. The campaign successfully reached a big crowd and #midwives4all reached trending topic on Twitter by the end of the campaign."
+        },
+        {
+          "img": {
+            "src": "/images/midwives4all-5.jpg",
+            "placeholder": "/images/midwives4all-5.jpg",
+            "alt": "",
+            "aspectRatioPadding": "68.9",
+            "width": "50"
+          }
+        },
+        {
+          "img": {
+            "src": "/images/midwives4all-6.jpg",
+            "placeholder": "/images/midwives4all-5.jpg",
+            "alt": "",
+            "aspectRatioPadding": "68.9",
+            "width": "50"
+          }
         }
       ],
       "recognition": {

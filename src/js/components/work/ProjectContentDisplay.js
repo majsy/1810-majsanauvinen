@@ -10,8 +10,10 @@ export default class ProjectContentDisplay extends Component {
       paddingTop: img.aspectRatioPadding + '%'
     }
 
+    const halfWidth = img.width === '50' ? true : false;
+
     return (
-      <div className={`ProjectContentDisplay`}>
+      <div className={`ProjectContentDisplay ${halfWidth ? 'isHalfWidth' : ''}`}>
         { img ? <div className="img-container" style={imgContainerStyle}>
           <LazyLoadImage
             className="img"

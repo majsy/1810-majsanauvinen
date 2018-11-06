@@ -2,10 +2,15 @@
 
 .ProjectContentDisplay {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
   width: 100%;
-  flex-direction: column;    
+  flex-direction: column;  
+
+  &.isHalfWidth {
+    width: 50%;
+    display: inline-block;
+    padding-right: 20px;
+  }
 
   &:first-child {
     margin-top: 0;
@@ -54,6 +59,13 @@
   @include breakpoint(tablet) {
     .copy {
       width: 100%;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    &.isHalfWidth {
+      width: 100%;
+      padding-right: 0;
     }
   }
 }

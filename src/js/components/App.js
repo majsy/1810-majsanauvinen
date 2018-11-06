@@ -18,31 +18,9 @@ export default class App extends Component {
 
     this.state = {
       appData: data,
-      currentProject: null,
-      isMobileLandscape: false
+      currentProject: null
     }
   }
-
-  componentDidMount() {
-    window.addEventListener('orientationchange', () => this.onOrientationChange(), false);
-  }
-
-  onOrientationChange() {
-    let orientation = 0
-
-		if (window.screen && window.screen.orientation) orientation = window.screen.orientation.angle;
-    else if (window.orientation) orientation = window.orientation
-    
-		if (window.innerWidth < 768) {
-			if (orientation === 90 || orientation === -90) {
-        this.setState({isMobileLandscape: true})
-			} else {
-        this.setState({isMobileLandscape: false})
-			}
-		} else {
-			this.setState({isMobileLandscape: false})
-		}
-	}
 
   ProjectRouteList() {
     const { projects } = this.state.appData;
