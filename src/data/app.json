@@ -9,7 +9,7 @@
           "src": "/images/stonewall-1.jpg",
           "placeholder": "/images/stonewall-1-placeholder.jpg",
           "alt": "",
-          "aspectRatioPadding": "52"
+          "aspectRatioPadding": "49.9"
         },
         "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum.",
         "detailItems": [
@@ -34,7 +34,7 @@
             "src": "/images/stonewall-2.jpg",
             "placeholder": "/images/stonewall-2-placeholder.jpg",
             "alt": "",
-            "aspectRatioPadding": "29.6"
+            "aspectRatioPadding": "54.9"
           }
         },
         {
@@ -42,8 +42,33 @@
             "src": "/images/stonewall-3.jpg",
             "placeholder": "/images/stonewall-3-placeholder.jpg",
             "alt": "",
-            "aspectRatioPadding": "46.2"
+            "aspectRatioPadding": "53.7"
           }
+        },
+        {
+          "imgArray": [
+            {
+              "src": "/images/stonewall-4.jpg",
+              "placeholder": "/images/stonewall-4-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "180",
+              "width": "33"
+            },
+            {
+              "src": "/images/stonewall-5.jpg",
+              "placeholder": "/images/stonewall-5-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "180",
+              "width": "33"
+            },
+            {
+              "src": "/images/stonewall-6.jpg",
+              "placeholder": "/images/stonewall-6-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "180",
+              "width": "33"
+            }
+          ]
         }
       ],
       "recognition": {
@@ -97,7 +122,7 @@
           "src": "/images/chobani-1.jpg",
           "placeholder": "/images/chobani-1-placeholder.jpg",
           "alt": "",
-          "aspectRatioPadding": "53.7"
+          "aspectRatioPadding": "50.7"
         },
         "copy": "Chobani, the leading yoghurt brand in US, asked Stink Studios to create their new site as part of their big rebranding. The result is a module based and scalable site built with React and using the headless CMS Contentful for great flexibility. To respond to Chobani's huge audience we also implemented accessibility improvements such as a contrast color check on the hex values coming from the the CMS data, to guarantee a good readability of the site.",
         "detailItems": [
@@ -122,7 +147,7 @@
             "src": "/images/chobani-2.jpg",
             "placeholder": "/images/chobani-2-placeholder.jpg",
             "alt": "",
-            "aspectRatioPadding": "42"
+            "aspectRatioPadding": "55.9"
           }
         },
         {
@@ -130,9 +155,42 @@
             "src": "/images/chobani-3.jpg",
             "placeholder": "/images/chobani-3-placeholder.jpg",
             "alt": "",
-            "aspectRatioPadding": "41.2"
+            "aspectRatioPadding": "53.3"
           },
           "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Integer scelerisque quam nec arcu bibendum, vel sollicitudin augue ullamcorper."
+        },
+        {
+          "img": {
+            "src": "/images/chobani-4.jpg",
+            "placeholder": "/images/chobani-4-placeholder.jpg",
+            "alt": "",
+            "aspectRatioPadding": "53.1"
+          }
+        },
+        {
+          "imgArray": [
+            {
+              "src": "/images/chobani-5.jpg",
+              "placeholder": "/images/chobani-5-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "180",
+              "width": "33"
+            },
+            {
+              "src": "/images/chobani-6.jpg",
+              "placeholder": "/images/chobani-6-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "180",
+              "width": "33"
+            },
+            {
+              "src": "/images/chobani-7.jpg",
+              "placeholder": "/images/chobani-7-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "180",
+              "width": "33"
+            }
+          ]
         }
       ],
       "recognition": {
@@ -200,22 +258,22 @@
           "copy": "To highlight the problem and solution, we created an informative yet emotional video, where I was apart of writing the manuscript. To reach out to as many social media users as possible we used Thunderclap, which is a powerful crowd speaking tool. In addition to this we built a dropdown Twitter recruit where a specific country is targeted and a list of influential Twitter users popular in that country can be shuffled and encouraged to join the cause through Thunderclap. The campaign successfully reached a big crowd and #midwives4all reached trending topic on Twitter by the end of the campaign."
         },
         {
-          "img": {
-            "src": "/images/midwives4all-5.jpg",
-            "placeholder": "/images/midwives4all-5.jpg",
-            "alt": "",
-            "aspectRatioPadding": "68.9",
-            "width": "50"
-          }
-        },
-        {
-          "img": {
-            "src": "/images/midwives4all-6.jpg",
-            "placeholder": "/images/midwives4all-5.jpg",
-            "alt": "",
-            "aspectRatioPadding": "68.9",
-            "width": "50"
-          }
+          "imgArray": [
+            {
+              "src": "/images/midwives4all-5.jpg",
+              "placeholder": "/images/midwives4all-5-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "68.9",
+              "width": "50"
+            },
+            {
+              "src": "/images/midwives4all-6.jpg",
+              "placeholder": "/images/midwives4all-6-placeholder.jpg",
+              "alt": "",
+              "aspectRatioPadding": "68.9",
+              "width": "50"
+            }
+          ]
         }
       ],
       "recognition": {

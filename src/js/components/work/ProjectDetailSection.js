@@ -8,8 +8,9 @@ export default class ProjectDetailsSection extends Component {
 
     return project.additional.map((item, index) => (
       <ProjectContentDisplay img={item.img ? item.img : null} 
-        copy={item.copy ? item.copy : null} 
-        key={`${project.title}_content_${index}`} />
+      copy={item.copy ? item.copy : null}
+      imgArray={item.imgArray ? item.imgArray : null}
+      key={`${project.title}_content_${index}`} />
     ));
   }
 
