@@ -12,9 +12,7 @@
     margin-top: 8px;
   }
 
-  .detail-list {
-    margin-top: 40px;
-  
+  .detail-list {  
     a {
       color: $purple;
       @extend .ui-link;
@@ -37,7 +35,7 @@
   }
 
   .project-link {
-    margin-top: 20px;
+    margin: 20px 0 30px;
   }
 
   .content-wrapper {

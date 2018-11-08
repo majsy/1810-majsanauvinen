@@ -11,7 +11,7 @@
           "alt": "",
           "aspectRatioPadding": "49.9"
         },
-        "copy": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis placerat magna, blandit suscipit tellus aliquet bibendum.",
+        "copy": "On June 28, 1969 police raided the Stonewall Inn, one of few establishments that at the time welcomed people from the gay community. Brave individuals rose up to demand LGBTQ equality and the so called Stonewall Riots that followed and lasted for 5 nights, were the beginning of the modern LGBTQ rights movement. To honor the Stonewall Riot’s 50th anniversary and share the many stories that have gone untold, Stink Studios partnered with the LGBT Community Center, with support from Google.org, to create Stonewall Forever. It aims to find, preserve and share the untold stories and historical materials from the early years of the LGBTQ rights movement.",
         "detailItems": [
           { 
             "label": "front-end developer" 
@@ -35,7 +35,8 @@
             "placeholder": "/images/stonewall-2-placeholder.jpg",
             "alt": "",
             "aspectRatioPadding": "54.9"
-          }
+          },
+          "copy": "The site is build in Gatsby v1, using React.js, CSS modules and GraphQL."
         },
         {
           "img": {

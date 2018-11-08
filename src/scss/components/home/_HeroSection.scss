@@ -1,4 +1,29 @@
 @import '../../base/mixins';
+@import '../../base/ease';
+
+@keyframes titleTransition {
+  0% {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes scollLabelTransition {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 .HeroSection {
   @include size(100%, calc(100vh - 30px));
@@ -17,14 +42,23 @@
   .display1 {
     max-width: 1440px;
     margin: 0 auto;
+    animation: titleTransition 1200ms $cubic-ease-out;
+    animation-delay: 500ms;
+    animation-fill-mode: backwards;
   }
 
   .scroll-label {
     position: absolute;
     bottom: 25px;
-    left: 50%;
-    transform: translateX(-50%);
+    text-align: center;
+    width: calc(100% - 120px);
+    // left: 50%;
+    // transform: translateX(-50%);
+    animation: scollLabelTransition 1000ms $cubic-ease-out;
+    animation-delay: 1500ms;
+    animation-fill-mode: backwards;
   }
+
 
   @include breakpoint(tablet) {
     padding: 0 $global-gutter-tablet;

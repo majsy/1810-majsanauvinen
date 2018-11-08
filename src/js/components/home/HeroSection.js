@@ -6,7 +6,7 @@ class HeroSection extends Component {
     const { data } = this.props;
 
     return (
-      <div className="HeroSection">
+      <div className={`HeroSection`}>
         <h1 className="display1">{data.title}</h1>
         <h5 className="display5 scroll-label">{data.scrollLabel}</h5>
       </div>

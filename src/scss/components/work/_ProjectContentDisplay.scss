@@ -1,27 +1,20 @@
 @import '../../base/mixins';
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .ProjectContentDisplay {
   display: flex;
-  margin: 20px 0;
+  margin-bottom: 20px;
   width: 100%;
   flex-direction: column;  
-
-  // &.isHalfWidth {
-  //   width: 50%;
-  //   display: inline-block;
-  //   padding-right: 10px;
-
-  //   &.isLastHalf {
-  //     padding-right: 0;
-  //     padding-left: 10px;
-  //   }
-  // }
-
-  // &.isThirdWidth {
-  //   width: calc(100%/3 - 10px);
-  //   display: inline-block;
-  //   margin: 0 5px;
-  // }
 
   .img-array-container {
     display: flex;
@@ -36,12 +29,13 @@
     }
   }
 
-  &:first-child {
-    margin-top: 0;
+  &:last-child {
+    margin-bottom: 0;
   }
 
   .copy {
     width: 50%;
+    margin-bottom: 30px;
   }
 
   .img-container {
@@ -59,6 +53,12 @@
       height: 100%;
       background-position: center;
       background-size: cover;
+      opacity: 0;
+    }
+
+    .is-loaded {
+      opacity: 1;
+      animation: fadeIn 500ms linear;
     }
 
     .placeholder {
@@ -69,12 +69,14 @@
   }
 
   @include breakpoint(tablet) {
+    
+  }
+
+  @include breakpoint(mobile) {
     .copy {
       width: 100%;
     }
-  }
 
-  @include breakpoint(mobile-s) {
     .img-array-container {  
       .imgDouble {
         width: calc(100%/2 - 10px);
