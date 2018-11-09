@@ -15,7 +15,7 @@ export default class ProjectContentDisplay extends Component {
   getImgArray() {
     const { imgArray } = this.props;
 
-    return imgArray.map((item, idx) => {
+    return imgArray.map((item, index) => {
       const arrayImgContainerStyle = {
         paddingTop: item.aspectRatioPadding + '%' 
       }
@@ -24,36 +24,46 @@ export default class ProjectContentDisplay extends Component {
       const imgTrio = item.width === '33' ? true : false;
 
       return (
-        <div className={`${imgDouble ? 'imgDouble': ''} ${imgTrio ? 'imgTrio': ''}`}
+        <li className={`${imgDouble ? 'imgDouble': ''} ${imgTrio ? 'imgTrio': ''}`}
         key={`array_item_${item.src}`}>
           <div className={`img-container`} 
           style={arrayImgContainerStyle}>
-          { this.renderImage(item, idx + 1) }
+            { this.renderImage(item, index + 1) }
           </div>
-        </div>
+        </li>
       )
     })
   }
 
-  renderImage(img, idx) {
+  getCopyArray() {
+    const { copyArray } = this.props;
+
+    return copyArray.map((copy, index) => (
+      <li className={``} key={`copy_item_${index}`}>
+        <p className={`display5 copy`} dangerouslySetInnerHTML={{__html: copy}}></p>
+      </li>
+    ));
+  }
+
+  renderImage(img, index) {
     return <LazyLoadImage
       className={
         classNames('img', {
-        'is-loaded': this.state.loadedImages.includes(idx)
+        'is-loaded': this.state.loadedImages.includes(index)
         })}
       alt={img.alt}
       height={'100%'}
-      afterLoad={() => this.addOpacity(idx)}
+      afterLoad={() => this.addOpacity(index)}
       wrapperClassName={"placeholder"}
       placeholderSrc={img.placeholder}
       src={img.src}
       width={'100%'} />
   }
 
-  addOpacity(idx) {
-    if (this.isUnmounted !== true && this.state.loadedImages.includes(idx) === false) {
+  addOpacity(index) {
+    if (this.isUnmounted !== true && this.state.loadedImages.includes(index) === false) {
         this.setState({
-          loadedImages: [idx, ...this.state.loadedImages]
+          loadedImages: [index, ...this.state.loadedImages]
         });
     }
   }
@@ -63,7 +73,7 @@ export default class ProjectContentDisplay extends Component {
   }
 
   render() {
-    const { img, copy, imgArray } = this.props;
+    const { img, copyArray, imgArray } = this.props;
     const imgContainerStyle = img ? { paddingTop: img.aspectRatioPadding + '%'} : null;
 
     return (
@@ -73,11 +83,13 @@ export default class ProjectContentDisplay extends Component {
         </div> : null }
         
         { imgArray ? 
-          <div className="img-array-container">
+          <ul className="img-list">
             { this.getImgArray() }
-        </div> : null }
+        </ul> : null }
 
-        { copy ? <p className={`display5 copy`}>{copy}</p> : null }
+        { copyArray ? <ul className="copy-list">
+          { this.getCopyArray() } 
+        </ul> : null }
       </div>
     );
   }

@@ -21,13 +21,13 @@
       padding-right: 70px;
       width: 65%;
   
-      .copy {
-        margin-bottom: 18px;
-        color: $purple-dark;
-        font-size: 1.2rem;
+      .copy-list {
+        li {
+          margin-bottom: 18px;
   
-        &:last-child {
-          margin-bottom: 0;
+          &:last-child {
+            margin-bottom: 0;
+          }
         }
       }
     }

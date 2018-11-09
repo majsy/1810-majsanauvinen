@@ -8,7 +8,7 @@ export default class ProjectDetailsSection extends Component {
 
     return project.additional.map((item, index) => (
       <ProjectContentDisplay img={item.img ? item.img : null} 
-      copy={item.copy ? item.copy : null}
+      copyArray={item.copyArray ? item.copyArray : null}
       imgArray={item.imgArray ? item.imgArray : null}
       key={`${project.title}_content_${index}`} />
     ));
@@ -47,7 +47,7 @@ export default class ProjectDetailsSection extends Component {
         <h3 className="display3 subtitle" dangerouslySetInnerHTML={{__html: project.subtitle}}></h3>
 
         <div className="content-wrapper">
-          <ProjectContentDisplay img={project.main.img} copy={project.main.copy} />
+          <ProjectContentDisplay img={project.main.img} copyArray={project.main.copyArray} />
 
           <ul className="detail-list">
             { this.getDetailItems() }

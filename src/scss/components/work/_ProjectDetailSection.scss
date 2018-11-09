@@ -30,6 +30,12 @@
     }
   }
 
+  .recognition-list {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
   .item-label {
     color: $purple;
   }
@@ -54,6 +60,14 @@
 
     .item {
       color: $purple;
+
+      &:hover {
+        span {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
 
       span {
         color: $purple-dark;

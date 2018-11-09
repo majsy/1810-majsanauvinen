@@ -16,7 +16,7 @@
   width: 100%;
   flex-direction: column;  
 
-  .img-array-container {
+  .img-list {
     display: flex;
     justify-content: space-between;
 
@@ -26,6 +26,14 @@
 
     .imgTrio {
       width: calc(100%/3 - 20px);
+    }
+  }
+
+  .copy-list {
+    .copy {
+      a {
+        color: $red;
+      }
     }
   }
 

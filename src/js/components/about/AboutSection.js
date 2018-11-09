@@ -22,6 +22,16 @@ class AboutSection extends Component {
     ))
   }
 
+  getCopy() {
+    const { data } = this.props;
+
+    return data.copyArray.map((copy, index) => (
+      <li key={`copy_item_${index}`}>
+        <p className="display5 copy" dangerouslySetInnerHTML={{__html: copy}}></p>
+      </li>
+    ))
+  }
+
   render() {
     const { data } = this.props;
 
@@ -32,8 +42,9 @@ class AboutSection extends Component {
         <div className="upper-container">
 
           <div className="left-container">
-            <p className="display5 copy" dangerouslySetInnerHTML={{__html: data.copy.p1}}></p>
-            <p className="display5 copy" dangerouslySetInnerHTML={{__html: data.copy.p2}}></p>
+            <ul className="copy-list">
+              { this.getCopy() }
+            </ul>
 
             <div className="list-container">
               <div className="experience">
