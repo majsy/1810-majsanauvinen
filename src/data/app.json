@@ -313,9 +313,9 @@
   "aboutPage": {
     "title": "about me",
     "copyArray": [
-      "Hej I’m Majsan -- a funky gal, colorful source of energy and curious explorer from Sweden. I currently live in New York, where I enjoy building useful & sexy websites and stretching my brain muscles by learning new things. I have a big interest in concept and user interaction and always strive to create meaningful experiences with great usability.",
+      "Hej I’m Majsan &#8212 a funky gal, colorful source of energy and curious explorer from Sweden. I currently live in New York, where I enjoy building useful & sexy websites and stretching my brain muscles by learning new things. I have a big interest in concept and user interaction and always strive to create meaningful experiences with great usability.",
       "Conquering new learnings, meeting new inspiring people and pushing my boundaries motivate me and is my recipe for growing as a person. I’m a team player and believe that maintaining a great group culture is key to an efficient, successful and fun work environment.",
-      "Available for full-time gigs from mid Jan 2019, hit me up!"
+      "Available for full-time gigs from mid Jan 2019, <a href=\"mailto:madeleineauvinen@gmail.com?subject=Hi Majsan!\">hit me up</a>!"
     ],
     "experience": {
       "title": "experience",

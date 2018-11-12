@@ -34,31 +34,44 @@
   padding: 0 $global-gutter;
   position: relative;
 
-  .display1,
-  .scroll-label {
-    color: $orchid;
+  &.hasScrolled {
+    .button-container {
+      transform: translate3d(0, -30px, 0);
+      opacity: 0;
+    }
   }
 
-  .display1 {
+  .title {
     max-width: 1440px;
     margin: 0 auto;
+    color: $orchid;
     animation: titleTransition 1200ms $cubic-ease-out;
     animation-delay: 500ms;
     animation-fill-mode: backwards;
   }
 
-  .scroll-label {
+  .button-container {
+    width: calc(100% - 120px);
     position: absolute;
     bottom: 25px;
     text-align: center;
-    width: calc(100% - 120px);
-    // left: 50%;
-    // transform: translateX(-50%);
-    animation: scollLabelTransition 1000ms $cubic-ease-out;
-    animation-delay: 1500ms;
-    animation-fill-mode: backwards;
-  }
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: all 800ms $cubic-ease-out;
 
+    .button-scroll {
+      background-color: transparent;
+      text-align: center;
+      animation: scollLabelTransition 1000ms $cubic-ease-out;
+      animation-delay: 1500ms;
+      animation-fill-mode: backwards;
+      outline: none;
+  
+      .label {
+        color: $purple;
+      }
+    }
+  }
 
   @include breakpoint(tablet) {
     padding: 0 $global-gutter-tablet;

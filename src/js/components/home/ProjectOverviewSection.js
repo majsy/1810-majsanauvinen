@@ -16,7 +16,7 @@ export default class ProjectOverviewSection extends Component {
 
   render() {
     return (
-      <div className="ProjectOverviewSection">
+      <div className="ProjectOverviewSection" ref={this.props.refProp}>
         <ul>
           { this.ProjectListItem() }
         </ul>

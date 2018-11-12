@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Route, HashRouter } from 'react-router-dom';
-// import logo from '../../logo.svg';
 import '../../scss/components/_App.scss';
 import Header from './Header';
 import Footer from './Footer';
@@ -8,7 +7,7 @@ import HomePage from '../pages/HomePage';
 import ProjectPage from '../pages/ProjectPage';
 import AboutPage from '../pages/AboutPage';
 import data from "../../data/app.json";
-import  { ROUTE } from '../common/routes';
+import { ROUTE } from '../common/routes';
 import { createBrowserHistory } from 'history';
 
 
@@ -18,7 +17,25 @@ export default class App extends Component {
 
     this.state = {
       appData: data,
-      currentProject: null
+      currentProject: null,
+      hasScrolled: false
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    const { hasScrolled } = this.state;
+    const isHomePage = window.location.pathname === '/';
+
+    if (!hasScrolled && isHomePage) {
+      if (window.scrollY > 200 && isHomePage) {
+        this.setState({hasScrolled: true})
+      }
+    } else if (hasScrolled) {
+      window.removeEventListener('scroll', this.handleScroll);
     }
   }
 
@@ -36,6 +53,7 @@ export default class App extends Component {
 
   render() {
     const { homePage, aboutPage, projects, footer } = this.state.appData;
+    const { hasScrolled } = this.state;
 
     const history = createBrowserHistory()
     history.listen(_ => {window.scrollTo(0, 0)})
@@ -45,9 +63,14 @@ export default class App extends Component {
         <div className="App">
           <Header projectList={projects} />
 
-          <Route exact path={ROUTE.HOME} render={(routerProps) => <HomePage data={homePage} projects={projects} {...routerProps} />} />
+          <Route exact path={ROUTE.HOME} render={(routerProps) => 
+            <HomePage data={homePage} 
+              projects={projects} 
+              hasScrolled={hasScrolled} 
+              {...routerProps} />} />
           { this.ProjectRouteList() }
-          <Route path={ROUTE.ABOUT} render={(routerProps) => <AboutPage data={aboutPage} {...routerProps} />} />
+          <Route path={ROUTE.ABOUT} render={(routerProps) => 
+            <AboutPage data={aboutPage} {...routerProps} />} />
 
           <Footer data={footer} />
         </div>

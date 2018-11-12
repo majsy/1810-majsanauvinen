@@ -25,6 +25,12 @@ div, header, footer, section, img {
   box-sizing: border-box;
 }
 
+button {
+	cursor: pointer;
+	border: none;
+	display: inline-block;
+}
+
 // HTML5 display reset for old browsers
 footer, header, menu, nav, section {
 	display: block;
