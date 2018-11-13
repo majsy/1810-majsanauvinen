@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, Router } from 'react-router-dom';
 import '../../scss/components/_App.scss';
 import Header from './Header';
 import Footer from './Footer';
@@ -14,6 +14,10 @@ import { createBrowserHistory } from 'history';
 export default class App extends Component {
   constructor() {
     super();
+
+    this.history = createBrowserHistory();
+
+    this.history.listen(_ => {window.scrollTo(0, 0)})
 
     this.state = {
       appData: data,
@@ -55,11 +59,8 @@ export default class App extends Component {
     const { homePage, aboutPage, projects, footer } = this.state.appData;
     const { hasScrolled } = this.state;
 
-    const history = createBrowserHistory()
-    history.listen(_ => {window.scrollTo(0, 0)})
-
     return (
-      <HashRouter history={history}>
+      <Router history={this.history}>
         <div className="App">
           <Header projectList={projects} />
 
@@ -74,7 +75,7 @@ export default class App extends Component {
 
           <Footer data={footer} />
         </div>
-      </HashRouter>
+      </Router>
     );
   }
 };
