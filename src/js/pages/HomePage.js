@@ -16,14 +16,19 @@ class HomePage extends Component {
     })
   }
 
+  handleAnimationEnd = () => {
+    this.props.handleAnimationEnd();
+  }
+
   render() {
-    const { data, projects, hasScrolled } = this.props;
+    const { data, projects, hasScrolled, introTextHasLoaded } = this.props;
 
     return (
       <div className="Page">
         <HeroSection data={data.heroSection} 
           handleScrollLabelClick={this.handleScrollLabelClick}
-          hasScrolled={hasScrolled} />
+          hasScrolled={hasScrolled}
+          handleAnimationEnd={this.handleAnimationEnd} />
         <ProjectOverviewSection data={data.projectSection} 
           projects={projects}
           refProp={this.projectSectionRef} />

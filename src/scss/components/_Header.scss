@@ -2,7 +2,7 @@
 @import '../base/ease';
 
 .Header {
-  @include size(100%, auto);
+  @include size(auto);
   padding: 0 40px;
   position: fixed;
   top: 0;
@@ -10,20 +10,25 @@
   text-align: right;
   z-index: 10;
 
+  &.introTextHasLoaded {
+    ul {
+      li {
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  }
+
   ul {
     list-style-type: none;
     margin-top: 40px;
-
-
-
-    .active {
-      // text-decoration: line-through;
-    }
 
     li {
       margin-bottom: 10px;
       font-family: 'Karla', sans-serif;
       font-size: 1.5rem;
+      transform: translate3d(150%, 0, 0);
+      transition: transform 500ms $cubic-ease-out;
+      transition-delay: 100ms;
 
       &.home {
         font-weight: 700;
@@ -31,6 +36,7 @@
 
       &:last-child {
         margin-bottom: 0;
+        transition-delay: 400ms;
       }
 
       a {

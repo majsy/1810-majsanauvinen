@@ -16,26 +16,31 @@ export default class App extends Component {
     super();
 
     this.history = createBrowserHistory();
-
     this.history.listen(_ => {window.scrollTo(0, 0)})
+    this.homePage = window.location.pathname === '/';
 
     this.state = {
       appData: data,
       currentProject: null,
-      hasScrolled: false
+      hasScrolled: false,
+      introTextHasLoaded: false
     }
   }
 
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll);
+    if (!this.homePage) this.setState({introTextHasLoaded: true})
+  }
+
+  handleAnimationEnd = () => {
+    this.setState({introTextHasLoaded: true})
   }
 
   handleScroll = () => {
     const { hasScrolled } = this.state;
-    const isHomePage = window.location.pathname === '/';
 
-    if (!hasScrolled && isHomePage) {
-      if (window.scrollY > 200 && isHomePage) {
+    if (!hasScrolled && this.homePage) {
+      if (window.scrollY > 200 && this.homePage) {
         this.setState({hasScrolled: true})
       }
     } else if (hasScrolled) {
@@ -57,17 +62,18 @@ export default class App extends Component {
 
   render() {
     const { homePage, aboutPage, projects, footer } = this.state.appData;
-    const { hasScrolled } = this.state;
+    const { hasScrolled, introTextHasLoaded } = this.state;
 
     return (
       <Router history={this.history}>
         <div className="App">
-          <Header projectList={projects} />
+          <Header projectList={projects} introTextHasLoaded={introTextHasLoaded} />
 
           <Route exact path={ROUTE.HOME} render={(routerProps) => 
             <HomePage data={homePage} 
               projects={projects} 
-              hasScrolled={hasScrolled} 
+              hasScrolled={hasScrolled}
+              handleAnimationEnd={this.handleAnimationEnd} 
               {...routerProps} />} />
           { this.ProjectRouteList() }
           <Route path={ROUTE.ABOUT} render={(routerProps) => 

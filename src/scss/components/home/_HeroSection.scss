@@ -26,7 +26,7 @@
 }
 
 .HeroSection {
-  @include size(100%, calc(100vh - 30px));
+  @include size(100%, calc(100vh));
   background-color: $purple-dark;
   display: flex;
   justify-content: center;
@@ -51,7 +51,7 @@
   }
 
   .button-container {
-    width: calc(100% - 120px);
+    width: calc(100% - #{$global-gutter}*2);
     position: absolute;
     bottom: 25px;
     text-align: center;
@@ -75,13 +75,25 @@
 
   @include breakpoint(tablet) {
     padding: 0 $global-gutter-tablet;
+
+    .button-container {
+      width: calc(100% - #{$global-gutter-tablet}*2);
+    }
   }
 
   @include breakpoint(mobile) {
     padding: 0 $global-gutter-mobile;
+
+    .button-container {
+      width: calc(100% - #{$global-gutter-mobile}*2);
+    }
   }
 
   @include breakpoint(mobile-s) {
     padding: 0 $global-gutter-mobile-s;
+
+    .button-container {
+      width: calc(100% - #{$global-gutter-mobile-s}*2);
+    }
   }
 }

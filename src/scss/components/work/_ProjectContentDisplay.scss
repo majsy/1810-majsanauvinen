@@ -81,11 +81,17 @@
   }
 
   @include breakpoint(mobile) {
+    margin-bottom: 10px;
+    
     .copy {
       width: 100%;
     }
 
-    .img-array-container {  
+    .img-container { 
+      margin-bottom: 10px;
+    }
+
+    .img-list {  
       .imgDouble {
         width: calc(100%/2 - 10px);
       }

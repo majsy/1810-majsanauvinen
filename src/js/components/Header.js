@@ -6,8 +6,10 @@ import  { ROUTE } from '../common/routes';
 
 class Header extends Component {
   render() {
+    const { introTextHasLoaded } = this.props;
+    
     return (
-      <header className="Header">
+      <header className={`Header ${introTextHasLoaded ? 'introTextHasLoaded' : ''}`}>
         <ul className="nav">
           <li className="home"><NavLink exact to={ROUTE.HOME}>majsan</NavLink></li>
           <li><NavLink to={ROUTE.ABOUT}>about</NavLink></li>

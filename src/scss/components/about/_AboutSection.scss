@@ -28,6 +28,10 @@
           &:last-child {
             margin-bottom: 0;
           }
+
+          a {
+            color: $red;
+          }
         }
       }
     }
@@ -65,14 +69,22 @@
         font-weight: 700;
       }
 
-      .item {
-        color: $purple;
+      li {
+        margin-bottom: 5px;
 
-        a {
-          color: $purple;
-          @extend .ui-link;
+        &:last-child {
+          margin-bottom: 0;
         }
-      }
+
+        .item {
+          color: $purple;
+  
+          a {
+            color: $purple;
+            @extend .ui-link;
+          }
+        }
+      } 
     }
 
     .experience {
@@ -142,6 +154,14 @@
         .subtitle {
           margin-bottom: 8px;
         }
+
+        li {
+          margin-bottom: 5px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
 
       .experience {
@@ -173,6 +193,13 @@
 
     .list-container {
       width: 100%;
+
+      .experience,
+      .education {
+        li {
+          margin-bottom: 10px;
+        }
+      }
     }
   }
 }

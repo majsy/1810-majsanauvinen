@@ -97,6 +97,15 @@
 
     .recognition-container {
       width: 100%;
+
+      .item {
+        font-size: 1.2rem;
+      }
+    }
+
+    .item-label,
+    .project-link {
+      font-size: 1.2rem;
     }
   }
 

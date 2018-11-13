@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import '../../../scss/components/home/_HeroSection.scss';
 
 class HeroSection extends Component {
+  componentDidMount() {
+    const scrollLabel = document.querySelector('.button-scroll');
+    scrollLabel.addEventListener('animationend', this.onAnimationEnd);
+  }
+
+  onAnimationEnd = () => {
+    this.props.handleAnimationEnd();
+  }
+
   onScrollLabelClick = () => { 
     this.props.handleScrollLabelClick();
   }
