@@ -20,7 +20,7 @@ class HeroSection extends Component {
 
     return (
       <div className={`HeroSection ${hasScrolled ? 'hasScrolled': ''}`}>
-        <h1 className="display1 title">{data.title}</h1>
+        <h1 className="display1 title" dangerouslySetInnerHTML={{__html: data.title}}></h1>
         <div className="button-container">
           <button className="button-scroll" onClick={this.onScrollLabelClick}>
             <span className="display5 label">{data.scrollLabel}</span>

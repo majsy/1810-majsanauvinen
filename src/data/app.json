@@ -306,7 +306,11 @@
   ],
   "homePage": {
     "heroSection": {
-      "title": "I'm Majsan, a Swedish developer and creative mind based in New York.",
+      "title": "I'm <span>Majsan</span>, a Swedish developer and creative mind based in New York.",
+      "hoverGif": {
+        "src": "http://i.giphy.com/3oriObJHCFDBCvFTPy.gif?fbclid=IwAR0bDZ4FSvy-i9XYv-JBSMcb8ux_CgQMWWaKnGX-ZCIdl61iatC3uI7ppXo",
+        "alt": "Dancing Majsan"
+      },
       "scrollLabel": "scroll to see work"
     }
   },

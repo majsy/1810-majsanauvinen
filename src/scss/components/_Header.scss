@@ -55,6 +55,12 @@
           transition-delay: 150ms;
         }
 
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+
         &.active {
           &::after {
             width: 100%;

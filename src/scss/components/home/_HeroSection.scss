@@ -48,6 +48,28 @@
     animation: titleTransition 1200ms $cubic-ease-out;
     animation-delay: 500ms;
     animation-fill-mode: backwards;
+
+    span {
+      cursor: pointer;
+
+      &::after {
+        content: '';
+        display: none;
+        @include size(260px);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+        background-size: contain;
+        background-image: linear-gradient(rgba(210, 14, 53, 0.45), rgba(210, 14, 53, 0.45)), url('https://bit.ly/2zRD4La');
+      }
+
+      &:hover {
+        &::after {
+          display: block;
+        }
+      }
+    }
   }
 
   .button-container {
@@ -79,6 +101,14 @@
     .button-container {
       width: calc(100% - #{$global-gutter-tablet}*2);
     }
+
+    .title {
+      span {  
+        &::after {
+          @include size(220px);
+        }
+      }
+    }
   }
 
   @include breakpoint(mobile) {
@@ -86,6 +116,12 @@
 
     .button-container {
       width: calc(100% - #{$global-gutter-mobile}*2);
+    }
+
+    .title {
+      span {
+        pointer-events: none;
+      }
     }
   }
 
