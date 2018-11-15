@@ -7,7 +7,9 @@ class AboutSection extends Component {
 
     return data.experience.list.map((item, index) => (
       <li key={`experience_${index}`}>
-        <h4 className="display4 item">{item.role}, <a href={item.url} target="_blank" rel="noopener noreferrer">{item.company}</a>, {item.period}</h4>
+        <h4 className="display4 item">{item.role}</h4>
+        <h4 className="display4 item"><a href={item.url} target="_blank" rel="noopener noreferrer">{item.company}</a></h4>
+        <h4 className="display4 item">{item.period}</h4>
       </li>
     ))
   }
@@ -17,7 +19,9 @@ class AboutSection extends Component {
 
     return data.education.list.map((item, index) => (
       <li key={`education_${index}`}>
-        <h4 className="display4 item">{item.program}, {item.url ? <a href={item.url} target="_blank" rel="noopener noreferrer">{item.school}</a> : item.school }, {item.period}</h4>
+        <h4 className="display4 item">{item.program}</h4>
+        <h4 className="display4 item">{item.url ? <a href={item.url} target="_blank" rel="noopener noreferrer">{item.school}</a> : item.school }</h4>
+        <h4 className="display4 item">{item.period}</h4>
       </li>
     ))
   }
@@ -47,16 +51,16 @@ class AboutSection extends Component {
             </ul>
 
             <div className="list-container">
-              <div className="experience">
-                <h3 className="display3 subtitle">{data.experience.title}</h3>
-                <ul>
-                  { this.getExperienceItems()}
-                </ul>
-              </div>
               <div className="education">
                 <h3 className="display3 subtitle">{data.education.title}</h3>
                 <ul>
                   { this.getEducationItems()}
+                </ul>
+              </div>
+              <div className="experience">
+                <h3 className="display3 subtitle">{data.experience.title}</h3>
+                <ul>
+                  { this.getExperienceItems()}
                 </ul>
               </div>
             </div>

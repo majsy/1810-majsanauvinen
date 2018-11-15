@@ -3,7 +3,7 @@
 @import '../../base/ui';
 
 .ProjectItem {
-  margin: 0 0 60px 0;
+  margin: 0 0 90px 0;
   display: inline-block;
 
   &.lastItem {
@@ -41,7 +41,7 @@
   &:hover {
     .title {
       &::before {
-        width: 85px;
+        width: 80px;
       }
     }
 
@@ -52,6 +52,8 @@
   }
 
   @include breakpoint(tablet) {
+    margin: 0 0 70px 0;
+
     .title {
       &::before {
         left: -85px;
@@ -69,9 +71,11 @@
   }
 
   @include breakpoint(mobile) {
-    margin: 0 0 40px 0;
+    margin: 0 0 50px 0;
 
-    .title {  
+    .title { 
+      margin-bottom: 5px;
+
       &::before {
         display: none;
       }

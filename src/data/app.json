@@ -3,7 +3,7 @@
     {
       "id": "stonewall",
       "title": "Stonewall Forever",
-      "subtitle": "the LGBT community center <span>+ google.org</span>",
+      "subtitle": "The LGBT community center <span>+ google.org</span>",
       "main": {
         "img": {
           "src": "/images/stonewall-1.jpg",
@@ -93,7 +93,7 @@
     {
       "id": "2cool4gluten",
       "title": "2cool4gluten",
-      "subtitle": "personal project",
+      "subtitle": "Personal project",
       "main": {
         "img": {
           "src": "/images/2cool4gluten-1.jpg",
@@ -122,7 +122,7 @@
     {
       "id": "chobani",
       "title": "Chobani.com",
-      "subtitle": "chobani",
+      "subtitle": "Chobani",
       "main": {
         "img": {
           "src": "/images/chobani-1.jpg",
@@ -229,7 +229,7 @@
     {
       "id": "midwives4all",
       "title": "Speak up for <span>Midwifery</span>",
-      "subtitle": "midwives4all",
+      "subtitle": "Midwives4all",
       "main": {
         "img": {
           "src": "/images/midwives4all-1.jpg",
@@ -315,60 +315,60 @@
     }
   },
   "aboutPage": {
-    "title": "about me",
+    "title": "About me",
     "copyArray": [
       "Hej I’m Majsan &#8212 a funky gal, colorful source of energy and curious explorer from Sweden. I currently live in New York, where I enjoy building useful & sexy websites and stretching my brain muscles by learning new things. I have a big interest in concept and user interaction and always strive to create meaningful experiences with great usability.",
       "Conquering new learnings, meeting new inspiring people and pushing my boundaries motivate me and is my recipe for growing as a person. I’m a team player and believe that maintaining a great group culture is key to an efficient, successful and fun work environment.",
       "Available for full-time gigs from mid Jan 2019, <a href=\"mailto:madeleineauvinen@gmail.com?subject=Hi Majsan!\">hit me up</a>!"
     ],
     "experience": {
-      "title": "experience",
+      "title": "Experience",
       "list": [
         {
           "role": "Creative developer",
           "company": "Stink Studios",
-          "period": "Jun 17 - Sept 18",
+          "period": "Jun 2017 - Sept 2018",
           "url": "http://stinkstudios.com"
         },
         {
           "role": "Front-end developer",
           "company": "Label A",
-          "period": "Sept 16 - April 17",
+          "period": "Sept 2016 - April 2017",
           "url": "http://labela.nl"
         },
         {
           "role": "Front-end developer intern",
           "company": "Media Monks",
-          "period": "Nov 15 - May 16",
+          "period": "Nov 2015 - May 2016",
           "url": "http://mediamonks.com"
         }
       ]
     },
     "education": {
-      "title": "education",
+      "title": "Education",
       "list": [
         {
-          "program": "Intro to User Experience Design Course",
+          "program": "User Experience Design Course",
           "school": "Superhi",
-          "period": "Sept 18",
+          "period": "Sept 2018",
           "url": "http://superhi.com"
         },
         {
           "program": "Process Design & Facilitation Course",
           "school": "Hyper Island",
-          "period": "Jan 17",
+          "period": "Jan 2017",
           "url": "http://hyperisland.com"
         },
         {
           "program": "Digital Media Creative Program",
           "school": "Hyper Island",
-          "period": "Aug 14 - June 16",
+          "period": "Aug 2014 - June 2016",
           "url": "http://hyperisland.com"
         },
         {
           "program": "B.A. Advertising & PR",
           "school": "Stockholm University",
-          "period": "Sept 11 - June 14"
+          "period": "Sept 2011 - June 2014"
         }
       ]
     }

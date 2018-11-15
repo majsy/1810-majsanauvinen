@@ -27,6 +27,10 @@
   
           &:last-child {
             margin-bottom: 0;
+
+            .copy {
+              font-weight: 700;
+            }
           }
 
           a {
@@ -58,19 +62,18 @@
 
   .list-container {
     display: flex;
-    flex-direction: column;
     margin-top: 70px;
 
     .experience,
     .education {
       .subtitle {
         color: $purple-dark;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
         font-weight: 700;
       }
 
       li {
-        margin-bottom: 5px;
+        margin-bottom: 25px;
 
         &:last-child {
           margin-bottom: 0;
@@ -78,6 +81,11 @@
 
         .item {
           color: $purple;
+
+          &:first-child {
+            color: $purple-dark;
+            font-weight: 700;
+          }
   
           a {
             color: $purple;
@@ -87,8 +95,8 @@
       } 
     }
 
-    .experience {
-      margin-bottom: 30px;
+    .education {
+      margin-right: 70px;
     }
   }
 
@@ -147,16 +155,17 @@
     }
 
     .list-container {
+      flex-direction: column;
       margin-top: 50px;
 
       .experience,
       .education {
         .subtitle {
-          margin-bottom: 8px;
+          margin-bottom: 20px;
         }
 
         li {
-          margin-bottom: 5px;
+          margin-bottom: 15px;
 
           &:last-child {
             margin-bottom: 0;
@@ -164,8 +173,8 @@
         }
       }
 
-      .experience {
-        margin: 0 0 20px 0;
+      .education {
+        margin: 0 0 50px 0;
       }
     }
   }
@@ -193,13 +202,6 @@
 
     .list-container {
       width: 100%;
-
-      .experience,
-      .education {
-        li {
-          margin-bottom: 10px;
-        }
-      }
     }
   }
 }
