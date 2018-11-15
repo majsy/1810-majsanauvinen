@@ -13,7 +13,7 @@
   &.introTextHasLoaded {
     ul {
       li {
-        transform: translate3d(0, 0, 0);
+        transform: translateX(0);
       }
     }
   }
@@ -23,10 +23,10 @@
     margin-top: 40px;
 
     li {
-      margin-bottom: 10px;
+      margin-bottom: 14px;
       font-family: 'Karla', sans-serif;
       font-size: 1.5rem;
-      transform: translate3d(150%, 0, 0);
+      transform: translateX(150px);
       transition: transform 500ms $cubic-ease-out;
       transition-delay: 100ms;
 
@@ -52,6 +52,7 @@
           height: 2px;
           background-color: $red;
           transition: width 500ms $cubic-ease-out;
+          transition-delay: 150ms;
         }
 
         &.active {

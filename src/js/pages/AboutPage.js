@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import AboutSection from '../components/about/AboutSection';
 import '../../scss/components/_Page.scss';
  

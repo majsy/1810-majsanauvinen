@@ -11,8 +11,8 @@ class Header extends Component {
     return (
       <header className={`Header ${introTextHasLoaded ? 'introTextHasLoaded' : ''}`}>
         <ul className="nav">
-          <li className="home"><NavLink exact to={ROUTE.HOME}>majsan</NavLink></li>
-          <li><NavLink to={ROUTE.ABOUT}>about</NavLink></li>
+          <li className="home"><NavLink activeClassName={'active'} exact to={ROUTE.HOME}>majsan</NavLink></li>
+          <li><NavLink activeClassName={'active'} to={ROUTE.ABOUT}>about</NavLink></li>
         </ul>
       </header>
     );

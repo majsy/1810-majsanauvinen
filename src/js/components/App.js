@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Route, Router } from 'react-router-dom';
+import { Route, Router, Switch } from 'react-router-dom';
+import { ROUTE } from '../common/routes';
+import { createBrowserHistory } from 'history';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
 import '../../scss/components/_App.scss';
 import Header from './Header';
 import Footer from './Footer';
@@ -7,9 +10,6 @@ import HomePage from '../pages/HomePage';
 import ProjectPage from '../pages/ProjectPage';
 import AboutPage from '../pages/AboutPage';
 import data from "../../data/app.json";
-import { ROUTE } from '../common/routes';
-import { createBrowserHistory } from 'history';
-
 
 export default class App extends Component {
   constructor() {
@@ -66,18 +66,33 @@ export default class App extends Component {
 
     return (
       <Router history={this.history}>
-        <div className="App">
+        <div className={`App ${this.homePage ? 'isHomePage' : ''}`}>
           <Header projectList={projects} introTextHasLoaded={introTextHasLoaded} />
 
-          <Route exact path={ROUTE.HOME} render={(routerProps) => 
-            <HomePage data={homePage} 
-              projects={projects} 
-              hasScrolled={hasScrolled}
-              handleAnimationEnd={this.handleAnimationEnd} 
-              {...routerProps} />} />
-          { this.ProjectRouteList() }
-          <Route path={ROUTE.ABOUT} render={(routerProps) => 
-            <AboutPage data={aboutPage} {...routerProps} />} />
+            <Route render={({location}) => (
+              <TransitionGroup>
+                <CSSTransition
+                  key={location.key}
+                  timeout={400}
+                  classNames="fade">
+                  <Switch location={location}>
+      
+                    <Route exact path={ROUTE.HOME} render={(routerProps) => 
+                      <HomePage data={homePage} 
+                        projects={projects} 
+                        hasScrolled={hasScrolled}
+                        handleAnimationEnd={this.handleAnimationEnd} 
+                        {...routerProps} />} />
+
+                    { this.ProjectRouteList() }
+
+                    <Route path={ROUTE.ABOUT} render={(routerProps) => 
+                      <AboutPage data={aboutPage} {...routerProps} />} />
+
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            )} />
 
           <Footer data={footer} />
         </div>

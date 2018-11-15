@@ -18,12 +18,10 @@ class Footer extends Component {
   }
 
   render() {
-    const { location, data } = this.props;
+    const { data } = this.props;
 
     return (
-      <footer className={classNames("Footer", {
-        isAboutPage: location.pathname === '/about'
-      })}>
+      <footer className="Footer">
         <ul>
           { this.NavListItem() }
         </ul>
