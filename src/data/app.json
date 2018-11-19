@@ -3,7 +3,7 @@
     {
       "id": "stonewall",
       "title": "Stonewall Forever",
-      "subtitle": "The LGBT community center <span>+ google.org</span>",
+      "subtitle": "The LGBT Community Center <span>+ Google.org</span>",
       "main": {
         "img": {
           "src": "/images/stonewall-1.jpg",
@@ -93,7 +93,7 @@
     {
       "id": "2cool4gluten",
       "title": "2cool4gluten",
-      "subtitle": "Personal project",
+      "subtitle": "Personal Project",
       "main": {
         "img": {
           "src": "/images/2cool4gluten-1.jpg",
@@ -302,6 +302,56 @@
           }
         ]
       }
+    },
+    {
+      "id": "googlecloud",
+      "title": "Google <span>Premium Tier</span>",
+      "subtitle": "Google Cloud",
+      "main": {
+        "img": {
+          "src": "/images/googlecloud-1.jpg",
+            "placeholder": "/images/googlecloud-1.jpg",
+            "alt": "",
+            "aspectRatioPadding": "50.1"
+        },
+        "copyArray": [
+          "Since I got diagnosed with celiac disease a few years ago I’ve often been struggling to find meat- and gluten free recipes that are nice and inspiring (and not as in just ‘GF pasta pesto’ or a lame salad). To solve this I created 2cool4gluten.com, a veggie gluten free recipe generator and inspo tool for people on a GF diet, and all their friends who love throwing dinner parties.",
+          "The is a Firebase app built with Javascript ES6, Stylus and Three.JS for the interactive globe."
+        ],
+        "detailItems": [
+          { 
+            "label": "front-end developer" 
+          },
+          { 
+            "label": "<a href=\"http://www.stinkstudios.com\" target=\"_blank\" rel=\"noopener noreferrer\">Stink Studios</a>" 
+          },
+          { 
+            "label": "2018" 
+          }
+        ],
+        "link": {
+          "label": "hit me up for project access",
+          "url": "mailto:madeleineauvinen@gmail.com?subject=Google Premium Tier project access"
+        }
+      },
+      "additional": [
+        {
+          "img": {
+            "src": "/images/googlecloud-2.jpg",
+            "placeholder": "/images/midwives4all-3-placeholder.jpg",
+            "alt": "",
+            "aspectRatioPadding": "50.2"
+          }
+        },
+        {
+          "img": {
+            "src": "/images/googlecloud-3.jpg",
+            "placeholder": "/images/midwives4all-3-placeholder.jpg",
+            "alt": "",
+            "aspectRatioPadding": "50.2"
+          }
+        }
+      ]
     }
   ],
   "homePage": {
