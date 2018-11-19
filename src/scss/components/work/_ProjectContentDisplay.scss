@@ -29,8 +29,16 @@
     }
   }
 
+  .copy-container {
+    display: flex;
+  }
+
   .copy-list {
+    width: 50%;
+
     .copy {
+      margin-bottom: 30px;
+
       a {
         color: $red;
       }
@@ -39,11 +47,6 @@
 
   &:last-child {
     margin-bottom: 0;
-  }
-
-  .copy {
-    width: 50%;
-    margin-bottom: 30px;
   }
 
   .img-container {
@@ -83,7 +86,7 @@
   @include breakpoint(mobile) {
     margin-bottom: 10px;
     
-    .copy {
+    .copy-list {
       width: 100%;
     }
 

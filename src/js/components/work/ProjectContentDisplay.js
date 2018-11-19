@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../../../scss/components/work/_ProjectContentDisplay.scss';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import ProjectDetailDisplay from './ProjectDetailDisplay';
 import * as classNames from "classnames";
 
 export default class ProjectContentDisplay extends Component {
@@ -35,12 +36,12 @@ export default class ProjectContentDisplay extends Component {
     })
   }
 
-  getCopyArray() {
-    const { copyArray } = this.props;
+  getCopy() {
+    const { copy } = this.props;
 
-    return copyArray.map((copy, index) => (
+    return copy.map((item, index) => (
       <li className={``} key={`copy_item_${index}`}>
-        <p className={`display5 copy`} dangerouslySetInnerHTML={{__html: copy}}></p>
+        <p className={`display5 copy`} dangerouslySetInnerHTML={{__html: item}}></p>
       </li>
     ));
   }
@@ -73,7 +74,7 @@ export default class ProjectContentDisplay extends Component {
   }
 
   render() {
-    const { img, copyArray, imgArray } = this.props;
+    const { img, imgArray, copy, aboutTitle, link, role, recognition } = this.props;
     const imgContainerStyle = img ? { paddingTop: img.aspectRatioPadding + '%'} : null;
 
     return (
@@ -87,9 +88,16 @@ export default class ProjectContentDisplay extends Component {
             { this.getImgArray() }
         </ul> : null }
 
-        { copyArray ? <ul className="copy-list">
-          { this.getCopyArray() } 
-        </ul> : null }
+        <div className="copy-container">
+          { copy ? <ul className="copy-list">
+            { aboutTitle ? <h3 className="display3 subtitle">{aboutTitle}</h3> : null }
+            { this.getCopy() } 
+          </ul> : null }
+
+          { role ? <ProjectDetailDisplay role={role} 
+            recognition={recognition} 
+            link={link} /> : null }
+        </div>
       </div>
     );
   }
