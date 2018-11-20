@@ -12,7 +12,7 @@
           "aspectRatioPadding": "49.9"
         },
         "about": {
-          "title": "About",
+          "title": "Project",
           "copy": [
             "On June 28, 1969 police raided the Stonewall Inn, one of few establishments that at the time welcomed people from the gay community. Brave individuals rose up to demand LGBTQ equality and the so called Stonewall Riots that followed and lasted for 5 nights, were the beginning of the modern LGBTQ rights movement. To honor the Stonewall Riot’s 50th anniversary and share the many stories that have gone untold, Stink Studios partnered with the <a href=\"https://gaycenter.org/\" target=\"_blank\" rel=\"noopener noreferrer\">LGBT Community Center</a>, with support from <a href=\"https://www.google.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Google.org</a>, to create Stonewall Forever. It aims to find, preserve and share the untold stories and historical materials from the early years of the LGBTQ rights movement.",
             "It's a static PWA built in Gatsby.js v1, using React.js, Post CSS + CSS modules and GraphQL."
@@ -22,7 +22,7 @@
           "title": "Role",
           "items": [
             { 
-              "label": "front-end developer" 
+              "label": "Front-end developer" 
             },
             { 
               "label": "<a href=\"http://www.stinkstudios.com\" target=\"_blank\" rel=\"noopener noreferrer\">Stink Studios</a>" 
@@ -48,7 +48,7 @@
           ]
         },
         "link": {
-          "label": "stonewallforever.org",
+          "label": "Stonewallforever.org",
           "url": "http://stonewallforever.org"
         }
       },
@@ -108,7 +108,7 @@
             "aspectRatioPadding": "59"
         },
         "about": {
-          "title": "About",
+          "title": "Project",
           "copy": [
             "Since I got diagnosed with celiac disease a few years ago I’ve often been struggling to find meat- and gluten free recipes that are nice and inspiring (and not as in just ‘GF pasta pesto’ or a lame salad). To solve this I created 2cool4gluten.com, a veggie gluten free recipe generator and inspo tool for people on a GF diet, and all their friends who love throwing dinner parties.",
             "The app is built with React.js and Sass and uses Babel + Webpack for compiling."
@@ -118,7 +118,7 @@
           "title": "Role",
           "items": [
             { 
-              "label": "concept - art direction - front-end" 
+              "label": "Concept - Art direction - Front-end" 
             },
             { 
               "label": "2017" 
@@ -143,17 +143,19 @@
           "aspectRatioPadding": "50.7"
         },
         "about": {
-          "title": "About",
+          "title": "Project",
           "copy": [
             "Chobani, the leading yoghurt brand in US, partnered with Stink Studios to create their new dot com as part of their big rebranding launching in beginning of 2018. To respond to the client’s request for great functionality and flexibility we built a site with page templates where the client can customize the page layouts, using over 10 flexible React modules that include frame and positioning options to name a few. It’s using the headless CMS Contentful which operates separately from the front-end and allows teams to define their own data structure to fit their needs.",
-            "The stack includes: React.js, Redux, Immutable.js, Post CSS + CSS modules as well as Babel and Webpack for compiling."
+            "To respond to Chobani’s huge audience we also implemented various accessibility improvements such as a contrast color check on the hex values coming from the CMS data, to guarantee a good readability throughout the site.",
+            "The stack includes: React.js, Redux, Immutable.js, Post CSS + CSS modules as well as Babel and Webpack for compiling.",
+            "Read more about how we built the site <a href=\"https://medium.com/stink-studios/how-we-built-chobani-com-98fe5613b1b5\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>."
           ]
         },
         "role": {
           "title": "Role",
           "items": [
             { 
-              "label": "front-end developer" 
+              "label": "Front-end developer" 
             },
             { 
               "label": "<a href=\"http://www.stinkstudios.com\" target=\"_blank\" rel=\"noopener noreferrer\">Stink Studios</a>" 
@@ -167,24 +169,24 @@
           "title": "Recognition",
           "list": [
             {
-              "source": "awwwards",
+              "source": "Awwwards",
               "title": "Site of the Day",
               "url": "https://www.awwwards.com/sites/chobani-com"
             },
             {
-              "source": "awwwards",
+              "source": "Awwwards",
               "title": "Mobile Site of the Week",
               "url": "https://www.awwwards.com/mobile-sites/chobani-com"
             },
             {
-              "source": "css awards",
+              "source": "CSS Awards",
               "title": "Site of the Day",
               "url": "https://www.cssawards.net/website/chobani/"
             }
           ]
         },
         "link": {
-          "label": "chobani.com",
+          "label": "Chobani.com",
           "url": "http://chobani.com"
         }
       },
@@ -203,11 +205,7 @@
             "placeholder": "/images/chobani-3-placeholder.jpg",
             "alt": "",
             "aspectRatioPadding": "53.3"
-          },
-          "copy": [
-            "To respond to Chobani’s huge audience we also implemented various accessibility improvements such as a contrast color check on the hex values coming from the CMS data, to guarantee a good readability throughout the site.",
-            "Read more about how we built the site <a href=\"https://medium.com/stink-studios/how-we-built-chobani-com-98fe5613b1b5\" target=\"_blank\" rel=\"noopener noreferrer\">here</a>."
-          ]
+          }
         },
         {
           "img": {
@@ -256,16 +254,17 @@
           "aspectRatioPadding": "50"
         },
         "about": {
-          "title": "About",
+          "title": "Project",
           "copy": [
-            "Together with three friends from Hyper Island I created a campaign for <a href=\"https://www.government.se/government-of-sweden/ministry-for-foreign-affairs/\" target=\"_blank\" rel=\"noopener noreferrer\">Sweden’s Ministry of Foregin Affairs</a>’ initiative called Midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, by mainly focusing on emphasizing the benefits of midwifery, and the important role midwives have when it comes to ensure a safe pregnancy and motherhood for all women. The long term goal is for maternal and newborn health to be a prioritized topic in every country and government."
+            "Together with three friends from Hyper Island I created a campaign for <a href=\"https://www.government.se/government-of-sweden/ministry-for-foreign-affairs/\" target=\"_blank\" rel=\"noopener noreferrer\">Sweden’s Ministry of Foregin Affairs</a>’ initiative called Midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, by mainly focusing on emphasizing the benefits of midwifery, and the important role midwives have when it comes to ensure a safe pregnancy and motherhood for all women. The long term goal is for maternal and newborn health to be a prioritized topic in every country and government.",
+            "To highlight the problem and solution, we created an informative yet emotional video, where I was apart of writing the manuscript. To reach out to as many social media users as possible we used Thunderclap, which is a powerful crowd speaking tool. In addition to this we built a dropdown Twitter recruit where a specific country is targeted and a list of influential Twitter users popular in that country can be shuffled and encouraged to join the cause through Thunderclap. The campaign successfully reached a big crowd and #midwives4all reached trending topic on Twitter by the end of the campaign."
           ]
         },
         "role": {
           "title": "Role",
           "items": [
             { 
-              "label": "concept - strategy - copy - front-end" 
+              "label": "Concept - Strategy - Copy - Front-end" 
             },
             { 
               "label": "2015" 
@@ -283,7 +282,7 @@
           ]
         },
         "link": {
-          "label": "speakupformidwifery.com",
+          "label": "Speakupformidwifery.com",
           "url": "http://speakupformidwifery.com"
         }
       },
@@ -294,10 +293,7 @@
             "placeholder": "/images/midwives4all-3-placeholder.jpg",
             "alt": "",
             "aspectRatioPadding": "45.7"
-          },
-          "copy": [
-            "To highlight the problem and solution, we created an informative yet emotional video, where I was apart of writing the manuscript. To reach out to as many social media users as possible we used Thunderclap, which is a powerful crowd speaking tool. In addition to this we built a dropdown Twitter recruit where a specific country is targeted and a list of influential Twitter users popular in that country can be shuffled and encouraged to join the cause through Thunderclap. The campaign successfully reached a big crowd and #midwives4all reached trending topic on Twitter by the end of the campaign."
-          ]
+          }
         },
         {
           "img": {

@@ -1,5 +1,5 @@
 @import '../../base/mixins';
-@import '../../base/ui';
+@import '../../base/variables';
 
 .ProjectDetailSection {
   @include size(100%);
@@ -8,98 +8,12 @@
   max-width: 1440px;
   margin: 0 auto;
 
-  .subtitle {
-    margin-top: 8px;
-  }
-
-  .detail-list {  
-    a {
-      color: $purple;
-      @extend .ui-link;
-    }
-  }
-
-  .detail-list,
-  .recognition-list {
-    li {
-      margin-bottom: 6px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }  
-    }
-  }
-
-  .recognition-list {
-    li {
-      margin-bottom: 10px;
-    }
-  }
-
-  .item-label {
-    color: $purple;
-  }
-
-  .project-link {
-    margin: 20px 0 30px;
-  }
-
-  .content-wrapper {
-    margin-top: 40px;
-  }
-
-  .recognition-container {
-    margin-top: 40px;
-
-    .subtitle {
-      color: $purple-dark;
-      font-weight: 700;
-      margin-bottom: 10px;
-    }
-
-    .item {
-      color: $purple;
-
-      &:hover {
-        span {
-          &::after {
-            width: 100%;
-          }
-        }
-      }
-
-      span {
-        color: $purple-dark;
-        @extend .ui-link;
-      }
-    }
-  }
-
   @include breakpoint(tablet) {
     padding: $global-top-tablet $global-gutter-tablet 50px;
-
-    .content-wrapper {
-      margin-top: 30px;
-    }
   }
 
   @include breakpoint(mobile) {
     padding: $global-top-mobile $global-gutter-mobile 70px;
-
-    .subtitle {
-      margin-top: 5px;
-    }
-
-    .recognition-container {
-      .item {
-        font-size: 1.2rem;
-      }
-    }
-
-    .item-label,
-    .project-link {
-      font-size: 1.2rem;
-    }
   }
 
   @include breakpoint(mobile-s) {

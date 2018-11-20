@@ -11,7 +11,7 @@
   .title {
     font-size: 2.8rem;
     color: $purple-dark;
-    margin: 0 0 30px 0;
+    margin-bottom: $project-margin-top;
   }
 
   .upper-container {
@@ -67,9 +67,7 @@
     .experience,
     .education {
       .subtitle {
-        color: $purple-dark;
-        margin-bottom: 30px;
-        font-weight: 700;
+        @extend .ui-list-subtitle;
       }
 
       li {
@@ -106,17 +104,18 @@
     .title {
       font-size: 2.6rem;
       margin-top: 30px;
+      margin-bottom: $project-margin-top-mobile;
     }
 
     .upper-container {
       .left-container {
         padding-right: 50px;
-        width: 60%;
+        width: 62%;
       }
   
       .right-container {
-        width: 40%;
-        padding-top: 45%;
+        width: 38%;
+        padding-top: 42%;
       }
     }
   }
@@ -126,7 +125,6 @@
 
     .title {
       font-size: 2.4rem;
-      margin-bottom: 20px;
     }
 
     .upper-container {
@@ -145,12 +143,11 @@
       }
   
       .right-container {
-        width: 60%;
+        width: 50%;
         order: 1;
-        align-self: flex-end;
         position: relative;
         right: auto;
-        padding-top: 66%;
+        padding-top: 55%;
       }
     }
 
@@ -186,7 +183,6 @@
     .title {
       font-size: 2.2rem;
       width: 100%;
-      margin: 0 0 10px 0px;
     }
 
     .upper-container {
@@ -195,8 +191,8 @@
       }
 
       .right-container {
-        width: 85%;
-        padding-top: 93%;
+        width: 100%;
+        padding-top: 100%;
       }
     }
 

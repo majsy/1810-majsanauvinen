@@ -1,0 +1,109 @@
+@import '../../base/mixins';
+@import '../../base/ui';
+
+.ProjectDetailDisplay {
+  margin-left: 120px;
+  width: calc(50% - 120px);
+
+  .role-list,
+  .recognition-list {
+    li {
+      margin-bottom: 6px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }  
+    }
+  }
+
+  .role-list {  
+    li {
+      &:first-child { 
+        .item-label {
+          font-weight: 700;
+        }
+      }
+    }
+
+    a {
+      color: $purple;
+      @extend .ui-link;
+    }
+  }
+
+  .recognition-list {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+
+  .item-label {
+    color: $purple;
+  }
+
+  .project-link {
+    margin-top: 30px;
+
+    .item-label {
+      color: $red;
+    }
+  }
+
+  .recognition-container {
+    margin-top: $project-margin-top;
+    width: 90%;
+
+    .item {
+      color: $purple;
+
+      &:hover {
+        span {
+          &::after {
+            width: 100%;
+          }
+        }
+      }
+
+      span {
+        @extend .ui-link;
+      }
+    }
+  }
+
+  .recognition-container,
+  .role-container {
+    .subtitle {
+      @extend .ui-list-subtitle;
+    }
+  }
+
+  @include breakpoint(tablet) {
+    width: 100%;
+    margin-left: 0;
+
+    .recognition-container {
+      width: 50%;
+    }
+
+    .recognition-container,
+    .role-container {
+      margin-top: $project-margin-top-mobile;
+    }
+  }
+
+
+  @include breakpoint(mobile) {
+    .recognition-container {
+      width: 100%;
+
+      .item {
+        font-size: 1.2rem;
+      }
+    }
+
+    .item-label,
+    .project-link {
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -74,7 +74,7 @@ export default class ProjectContentDisplay extends Component {
   }
 
   render() {
-    const { img, imgArray, copy, aboutTitle, link, role, recognition } = this.props;
+    const { img, imgArray, copy, title, link, role, recognition } = this.props;
     const imgContainerStyle = img ? { paddingTop: img.aspectRatioPadding + '%'} : null;
 
     return (
@@ -88,16 +88,16 @@ export default class ProjectContentDisplay extends Component {
             { this.getImgArray() }
         </ul> : null }
 
-        <div className="copy-container">
-          { copy ? <ul className="copy-list">
-            { aboutTitle ? <h3 className="display3 subtitle">{aboutTitle}</h3> : null }
+        { copy ?  <div className="copy-container">
+          <ul className="copy-list">
+            { title ? <h3 className="display3 subtitle">{title}</h3> : null }
             { this.getCopy() } 
-          </ul> : null }
+          </ul>
 
           { role ? <ProjectDetailDisplay role={role} 
             recognition={recognition} 
             link={link} /> : null }
-        </div>
+        </div> : null }
       </div>
     );
   }

@@ -5,8 +5,8 @@ export default class ProjectDetailDisplay extends Component {
   getRecognitionItems() {
     const { recognition } = this.props
 
-    return recognition.list.map((item) => (
-      <li key={`${item.title}`}>
+    return recognition.list.map((item, index) => (
+      <li key={`${item.title}_${index}`}>
         <a href={item.url} target="_blank" rel="noopener noreferrer">
           <h4 className="display4 item">
             <span>{item.source}</span> &mdash; {item.title}
@@ -34,7 +34,7 @@ export default class ProjectDetailDisplay extends Component {
 
         <div className="role-container">
           <h3 className="display3 subtitle">{role.title}</h3>
-          <ul className="detail-list">
+          <ul className="role-list">
             { this.getRoleItems() }
           </ul>
         </div>

@@ -14,30 +14,6 @@ export default class ProjectDetailsSection extends Component {
     ));
   }
 
-  // getRoleItems() {
-  //   const { project } = this.props;
-
-  //   return project.main.role.items.map((item, index) => (
-  //     <li key={`${project.title}_role_${index}`}>
-  //       <h4 className="display4 item-label" dangerouslySetInnerHTML={{__html: item.label}}></h4>
-  //     </li>
-  //   ))
-  // }
-
-  // getRecognitionItems() {
-  //   const { project } = this.props
-
-  //   return project.main.recognition.list.map((item, index) => (
-  //     <li key={`${project.title}_recognition_${index}`}>
-  //       <a href={item.url} target="_blank" rel="noopener noreferrer">
-  //         <h4 className="display4 item">
-  //           <span>{item.source}</span> &mdash; {item.title}
-  //         </h4>
-  //       </a>
-  //     </li>
-  //   ))
-  // }
-
   render() {
     const { project } = this.props;
     const mainContent = project.main;
@@ -51,7 +27,7 @@ export default class ProjectDetailsSection extends Component {
           <ProjectContentDisplay 
             img={mainContent.img} 
             copy={mainContent.about.copy} 
-            aboutTitle={mainContent.about.title} 
+            title={mainContent.about.title} 
             role={mainContent.role}
             recognition={mainContent.recognition}
             link={mainContent.link} />

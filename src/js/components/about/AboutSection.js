@@ -29,7 +29,7 @@ class AboutSection extends Component {
   getCopy() {
     const { data } = this.props;
 
-    return data.copyArray.map((copy, index) => (
+    return data.copy.map((copy, index) => (
       <li key={`copy_item_${index}`}>
         <p className="display5 copy" dangerouslySetInnerHTML={{__html: copy}}></p>
       </li>
