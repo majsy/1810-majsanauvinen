@@ -14,8 +14,8 @@
         "about": {
           "title": "Project",
           "copy": [
-            "On June 28, 1969 police raided the Stonewall Inn, one of few establishments that at the time welcomed people from the gay community. Brave individuals rose up to demand LGBTQ equality and the so called Stonewall Riots that followed and lasted for 5 nights, were the beginning of the modern LGBTQ rights movement. To honor the Stonewall Riot’s 50th anniversary and share the many stories that have gone untold, Stink Studios partnered with the <a href=\"https://gaycenter.org/\" target=\"_blank\" rel=\"noopener noreferrer\">LGBT Community Center</a>, with support from <a href=\"https://www.google.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Google.org</a>, to create Stonewall Forever. It aims to find, preserve and share the untold stories and historical materials from the early years of the LGBTQ rights movement.",
-            "It's a static PWA built in Gatsby.js v1, using React.js, Post CSS + CSS modules and GraphQL."
+            "On June 28, 1969 police raided the Stonewall Inn, one of the few establishments that at the time welcomed people from the gay community. Brave individuals rose up to demand LGBTQ equality and the so called Stonewall Riots that followed and lasted for 5 nights, were the beginning of the modern LGBTQ rights movement. To honor the Stonewall Riot’s 50th anniversary and share the many stories that have gone untold, Stink Studios partnered with the <a href=\"https://gaycenter.org/\" target=\"_blank\" rel=\"noopener noreferrer\">LGBT Community Center</a>, with support from <a href=\"https://www.google.org/\" target=\"_blank\" rel=\"noopener noreferrer\">Google.org</a>, to create Stonewall Forever. It aims to find, preserve and share the untold stories and historical materials from the early years of the LGBTQ rights movement.",
+            "The project is a static PWA built in Gatsby.js v1, using React.js, Post CSS + CSS modules and GraphQL."
           ]
         },
         "role": {
