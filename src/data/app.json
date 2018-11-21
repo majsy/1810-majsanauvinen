@@ -339,7 +339,9 @@
         "about": {
           "title": "Project",
           "copy": [
-            "Together with three friends from Hyper Island I created a campaign for <a href=\"https://www.government.se/government-of-sweden/ministry-for-foreign-affairs/\" target=\"_blank\" rel=\"noopener noreferrer\">Sweden’s Ministry of Foregin Affairs</a>’ initiative called Midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, by mainly focusing on emphasizing the benefits of midwifery, and the important role midwives have when it comes to ensure a safe pregnancy and motherhood for all women. The long term goal is for maternal and newborn health to be a prioritized topic in every country and government."
+            "Google Cloud wanted a simple and interactive way of illustrating the core differences between their Standard and Premium Network tiers and teamed up with Stink Studios. The request was to mainly highlight the performance and wide availability of the Premium Network tier.",
+            "As one of the front-end developers on this project my responsibility was to build the site layout and all the UI. To fit a lot of information in one page and still keep the site relatively spacious overlays, popups and tooltips are being used across the site.",
+            "This is a Firebase app built with Javascript ES6, Stylus and Three.JS for the interactive 3D globe."
           ]
         },
         "role": {
@@ -358,7 +360,7 @@
         },
         "link": {
           "label": "Hit me up for link access",
-          "url": "mailto:madeleineauvinen@gmail.com?subject=Google Premium Tier project access"
+          "url": "mailto:madeleineauvinen@gmail.com?subject=Google Cloud Network link access"
         }
       },
       "additional": [
@@ -392,11 +394,11 @@
     }
   },
   "aboutPage": {
-    "title": "About me",
+    "title": "The Elevator Pitch",
     "copy": [
-      "Hej I’m Majsan &#8212 a funky gal, colorful source of energy and curious explorer from Sweden. I currently live in New York, where I enjoy building useful & sexy websites and stretching my brain muscles by learning new things. I have a big interest in concept and user interaction and always strive to create meaningful experiences with great usability.",
-      "Conquering new learnings, meeting new inspiring people and pushing my boundaries motivate me and is my recipe for growing as a person. I’m a team player and believe that maintaining a great group culture is key to an efficient, successful and fun work environment.",
-      "Available for full-time gigs from Jan 2019, <a href=\"mailto:madeleineauvinen@gmail.com?subject=Hi Majsan!\">hit me up</a>!"
+      "Hej I’m Majsan &#8212 a colorful source of energy, curious explorer and professional <span>ice breaker</span> from Sweden. I currently live in New York, where I enjoy building useful & sexy websites and do my best to live by the motto <em>Never Stop Learning</em>. I have a big interest in concept and user interaction and always strive to create meaningful experiences with great usability and performance.",
+      "Conquering new skills, meeting new inspiring people and pushing my boundaries keep me motivated and is my recipe for growing as a person. I’m a team player and believe that maintaining a great group culture is key to an efficient, successful and fun work environment.",
+      "Available for full-time gigs starting Jan 2019, <a href=\"mailto:madeleineauvinen@gmail.com?subject=Hi Majsan!\">let's have coffee</a>!"
     ],
     "experience": {
       "title": "Experience",
