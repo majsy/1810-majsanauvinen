@@ -21,7 +21,7 @@ class HomePage extends Component {
   }
 
   render() {
-    const { data, projects, hasScrolled, introTextHasLoaded } = this.props;
+    const { data, projects, hasScrolled } = this.props;
 
     return (
       <div className="Page">

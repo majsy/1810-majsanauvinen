@@ -32,23 +32,7 @@ export default class ProjectDetailsSection extends Component {
             recognition={mainContent.recognition}
             link={mainContent.link} />
 
-          {/* <h3 className="display3 subtitle">{project.main.role.title}</h3>
-          <ul className="detail-list">
-            { this.getRoleItems() }
-          </ul> */}
-
-          {/* <a className="project-link ui-link" href={project.main.link.url} target="_blank" rel="noopener noreferrer">
-            <h4 className="display4 item-label">{project.main.link.label}</h4>
-          </a> */}
-
           { project.additional ? this.getAdditionalContent() : null }
-          
-          {/* { project.main.recognition ? <div className="recognition-container">
-            <h3 className="display3 subtitle">{project.main.recognition.title}</h3>
-            <ul className="recognition-list">
-              { this.getRecognitionItems() }
-            </ul> 
-          </div> : null } */}
         </div>
       </div>
     );

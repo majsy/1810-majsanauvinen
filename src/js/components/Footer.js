@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import '../../scss/components/_Footer.scss';
 import {withRouter} from 'react-router'
-import * as classNames from 'classnames';
 
 class Footer extends Component {
   NavListItem() {
