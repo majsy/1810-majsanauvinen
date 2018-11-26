@@ -75,6 +75,22 @@
 
     ul {
       margin-top: 30px;
+
+      li {
+        a {
+          &:hover {
+            &::after {
+              width: 0%;
+            }
+          }
+
+          &.active {
+            &::after {
+              width: 100%;
+            }
+          }
+        }
+      }
     }
   }
 

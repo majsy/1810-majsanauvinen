@@ -259,14 +259,15 @@
           "title": "Project",
           "copy": [
             "Together with three friends from Hyper Island I created a campaign for <a href=\"https://www.government.se/government-of-sweden/ministry-for-foreign-affairs/\" target=\"_blank\" rel=\"noopener noreferrer\">Sweden’s Ministry of Foregin Affairs</a>’ initiative called Midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, by mainly focusing on emphasizing the benefits of midwifery, and the important role midwives have when it comes to ensure a safe pregnancy and motherhood for all women. The long term goal is for maternal and newborn health to be a prioritized topic in every country and government.",
-            "To highlight the problem and solution, we created an informative yet emotional video, where I was apart of writing the manuscript. To reach out to as many social media users as possible we used Thunderclap, which is a powerful crowd speaking tool. In addition to this we built a dropdown Twitter recruit where a specific country is targeted and a list of influential Twitter users popular in that country can be shuffled and encouraged to join the cause through Thunderclap. The campaign successfully reached a big crowd and #midwives4all reached trending topic on Twitter by the end of the campaign."
+            "We created an informative yet emotional video to highlight the problem and potential solution. To reach out to as many social media users as possible we used Thunderclap, which is a powerful crowd speaking tool. In addition to this we built a dropdown Twitter recruit where a specific country is targeted and a list of influential Twitter users popular in that country can be shuffled and encouraged to join the cause through Thunderclap. The campaign successfully reached a big crowd and #midwives4all reached trending topic on Twitter by the end of the campaign.",
+            "My role in this project included campaign concept and strategy, as well as video manuscript and site copy. I was also one out of two developers who built the site."
           ]
         },
         "role": {
           "title": "Role",
           "items": [
             { 
-              "label": "Concept - Strategy - Copy - Front-end" 
+              "label": "Concept - Strategy - Copy <span>- Front-end</span>" 
             },
             { 
               "label": "2015" 
@@ -339,9 +340,9 @@
         "about": {
           "title": "Project",
           "copy": [
-            "Google Cloud wanted a simple and interactive way of illustrating the core differences between their Standard and Premium Network tiers and teamed up with Stink Studios. The request was to mainly highlight the performance and wide availability of the Premium Network tier.",
-            "As one of the front-end developers on this project my responsibility was to build the site layout and all the UI. To fit a lot of information in one page and still keep the site relatively spacious overlays, popups and tooltips are being used across the site.",
-            "This is a Firebase app built with Javascript ES6, Stylus and Three.JS for the interactive 3D globe."
+            "Google Cloud wanted a simple and interactive way of illustrating the core differences between their Standard and Premium Network tiers and teamed up with Stink Studios. The request was to mainly highlight the performance and extensive availability of the Premium Network tier.",
+            "As one of the front-end developers on this project my responsibility was to build the site layout and all the UI. To fit a lot of information in one page and still keep the site relatively spacious we used overlays, popups and tooltips across the site.",
+            "This is a Firebase app built with Javascript ES6, Stylus and Three.js for the interactive 3D globe."
           ]
         },
         "role": {
@@ -359,8 +360,8 @@
           ]
         },
         "link": {
-          "label": "Hit me up for link access",
-          "url": "mailto:madeleineauvinen@gmail.com?subject=Google Cloud Network link access"
+          "label": "Googlecloudnetwork.com",
+          "url": "http://googlecloudnetwork.com"
         }
       },
       "additional": [
