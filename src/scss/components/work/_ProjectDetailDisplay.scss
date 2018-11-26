@@ -106,4 +106,14 @@
       font-size: 1.2rem;
     }
   }
+
+  @include breakpoint(mobile-s) {
+    .role-container {
+      .item-label {
+        span{
+          display: inline-block;
+        }
+      }
+    }
+  }
 }

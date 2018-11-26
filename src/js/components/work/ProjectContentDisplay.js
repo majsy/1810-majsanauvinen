@@ -94,9 +94,9 @@ export default class ProjectContentDisplay extends Component {
             { this.getCopy() } 
           </ul>
 
-          { role ? <ProjectDetailDisplay role={role} 
-            recognition={recognition} 
-            link={link} /> : null }
+        { role ? <ProjectDetailDisplay role={role} 
+          recognition={recognition} 
+          link={link} /> : null }
         </div> : null }
       </div>
     );
