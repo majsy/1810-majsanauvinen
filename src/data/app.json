@@ -401,6 +401,11 @@
       "Conquering new skills, meeting new inspiring people and pushing my boundaries keep me motivated and is my recipe for growing as a person. I’m a team player and believe that maintaining a great group culture is key to an efficient, successful and fun work environment.",
       "Available for full-time gigs starting Jan 2019, <a href=\"mailto:madeleineauvinen@gmail.com?subject=Hi Majsan!\">let's have coffee</a>!"
     ],
+    "img": {
+      "src": "/images/majsan.jpg",
+      "placeholder": "/images/majsan-placeholder.jpg",
+      "alt": "Majsan"
+    },
     "experience": {
       "title": "Experience",
       "list": [

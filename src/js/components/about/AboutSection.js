@@ -1,7 +1,17 @@
 import React, { Component } from 'react';
 import '../../../scss/components/about/_AboutSection.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import * as classNames from "classnames";
 
 class AboutSection extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      imageLoaded: false
+    }
+  }
+
   getExperienceItems() {
     const { data } = this.props;
 
@@ -36,6 +46,35 @@ class AboutSection extends Component {
     ))
   }
 
+  renderImage() {
+    const { data } = this.props;
+
+    return <LazyLoadImage
+      className={
+        classNames('img', {
+        'is-loaded': this.state.imageLoaded
+        })}
+      alt={data.img.alt}
+      height={'100%'}
+      afterLoad={() => this.addOpacity()}
+      wrapperClassName={"placeholder"}
+      placeholderSrc={data.img.placeholder}
+      src={data.img.src}
+      width={'100%'} />
+  }
+
+  addOpacity() {
+    if (this.isUnmounted !== true) {
+      this.setState({
+        imageLoaded: true
+      });
+    }
+  }
+  
+  componentWillUnmount() {
+    this.isUnmounted = true;
+  }
+
   render() {
     const { data } = this.props;
 
@@ -67,8 +106,8 @@ class AboutSection extends Component {
 
           </div>
 
-          <div className="right-container">
-            <div className="img-container"></div>
+          <div className="right-image-container">
+            { this.renderImage() }
           </div>
 
         </div>

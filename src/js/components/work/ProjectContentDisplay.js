@@ -70,7 +70,7 @@ export default class ProjectContentDisplay extends Component {
   }
   
   componentWillUnmount() {
-     this.isUnmounted = true;
+    this.isUnmounted = true;
   }
 
   render() {
