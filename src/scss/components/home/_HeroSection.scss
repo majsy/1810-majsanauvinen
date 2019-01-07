@@ -31,7 +31,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 0 $global-gutter;
+  padding: 0 305px 0 $global-gutter;
   position: relative;
 
   &.hasScrolled {
@@ -103,6 +103,7 @@
     }
 
     .title {
+
       span {  
         &::after {
           @include size(220px);

@@ -258,7 +258,7 @@
         "about": {
           "title": "Project",
           "copy": [
-            "Together with three friends from Hyper Island I created a campaign for <a href=\"https://www.government.se/government-of-sweden/ministry-for-foreign-affairs/\" target=\"_blank\" rel=\"noopener noreferrer\">Sweden’s Ministry of Foregin Affairs</a>’ initiative called Midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, by mainly focusing on emphasizing the benefits of midwifery, and the important role midwives have when it comes to ensure a safe pregnancy and motherhood for all women. The long term goal is for maternal and newborn health to be a prioritized topic in every country and government.",
+            "Together with three friends from Hyper Island I created a campaign for <a href=\"https://www.government.se/government-of-sweden/ministry-for-foreign-affairs/\" target=\"_blank\" rel=\"noopener noreferrer\">Sweden’s Ministry of Foreign Affairs</a>’ initiative called Midwives4all. The brief was to raise awareness of the problems of maternal and newborn death in low income countries, by mainly focusing on emphasizing the benefits of midwifery, and the important role midwives have when it comes to ensure a safe pregnancy and motherhood for all women. The long term goal is for maternal and newborn health to be a prioritized topic in every country and government.",
             "We created an informative yet emotional video to highlight the problem and potential solution. To reach out to as many social media users as possible we used Thunderclap, which is a powerful crowd speaking tool. In addition to this we built a dropdown Twitter recruit where a specific country is targeted and a list of influential Twitter users popular in that country can be shuffled and encouraged to join the cause through Thunderclap. The campaign successfully reached a big crowd and #midwives4all reached trending topic on Twitter by the end of the campaign.",
             "My role in this project included campaign concept and strategy, as well as video manuscript and site copy. I was also one out of two developers who built the site."
           ]
@@ -386,7 +386,7 @@
   ],
   "homePage": {
     "heroSection": {
-      "title": "I'm <span>Majsan</span>, a Swedish developer and creative mind based in New York.",
+      "title": "I'm <span>Majsan</span>, a Swedish developer & UX designer based in New York.",
       "hoverGif": {
         "src": "http://i.giphy.com/3oriObJHCFDBCvFTPy.gif?fbclid=IwAR0bDZ4FSvy-i9XYv-JBSMcb8ux_CgQMWWaKnGX-ZCIdl61iatC3uI7ppXo",
         "alt": "Dancing Majsan"
@@ -483,6 +483,6 @@
         "url": "https://github.com/majsy"
       }
     ],
-    "copyright": "© 2018 madeleine auvinen"
+    "copyright": "© 2019 madeleine auvinen"
   }
 }
