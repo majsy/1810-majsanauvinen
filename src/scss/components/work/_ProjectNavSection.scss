@@ -1,0 +1,58 @@
+@import '../../base/mixins';
+
+.ProjectNavSection {
+  @include size(100%, 100%);
+  padding: 0 $global-gutter 0;
+  // background-color: $peach;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .ProjectNav {
+    .eyebrow {
+      color: $purple-dark;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+    
+    .previous {
+      margin: 50px 0 0;
+      font-size: 1.4rem;
+      display: inline-block;
+    }
+
+    .title {
+      font-size: 4rem;
+
+      span {
+        display: block;
+      }
+    }
+
+    .subtitle {
+      font-size: 1.4rem;
+    }
+
+    .nav-list {
+      li {
+        &:first-child {
+          display: inline-block;
+        }
+      }
+    }
+  }
+
+  @include breakpoint(tablet) {
+    padding: 0 $global-gutter-tablet 0;
+    
+  }
+
+  @include breakpoint(mobile) {
+    padding: 0 $global-gutter-mobile 0;
+    
+  }
+
+  @include breakpoint(mobile-s) {
+    padding: 0 $global-gutter-mobile-s 0;
+    
+  }
+}
