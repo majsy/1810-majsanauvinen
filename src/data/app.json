@@ -409,6 +409,12 @@
       "title": "Experience",
       "list": [
         {
+          "role": "Creative technologist",
+          "company": "Zero Studios",
+          "period": "Current",
+          "url": "http://zero.nyc"
+        },
+        {
           "role": "Creative developer",
           "company": "Stink Studios",
           "period": "Jun 2017 - Sept 2018",
